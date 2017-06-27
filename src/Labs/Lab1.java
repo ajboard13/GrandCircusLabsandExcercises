@@ -9,9 +9,9 @@ import static java.lang.System.*;
 public class Lab1 {
 
     public static void main(String[] args) {
-        int length;
-        int width;
-        int height;
+        Double length;
+        Double width;
+        Double height;
         boolean userCont;
 
         Scanner input = new Scanner(in);
@@ -20,11 +20,11 @@ public class Lab1 {
 
         do{
             out.print("\nEnter Length: ");
-            length = input.nextInt();
+            length = input.nextDouble();
             out.print("Enter Width: ");
-            width = input.nextInt();
+            width = input.nextDouble();
             out.print("Enter height: ");
-            height = input.nextInt();
+            height = input.nextDouble();
             out.println("Area: " + length*width);
             out.println("Perimeter: " + (length*2 + width*2));
             out.println("Volume: " + length*width*height);
