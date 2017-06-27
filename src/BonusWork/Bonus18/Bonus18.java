@@ -11,7 +11,6 @@ public class Bonus18 {
 
     public static void main(String[] args) {
         String userName;
-        int userChoice;
         boolean userCont;
         Scanner input = new Scanner(System.in);
 
