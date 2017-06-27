@@ -40,6 +40,7 @@ class IslandAdventure {
                 }
             }else {
                 System.out.println("Not a valid choice!\n");
+                input.nextLine();
             }
         }while(isValidChoice);
     }
