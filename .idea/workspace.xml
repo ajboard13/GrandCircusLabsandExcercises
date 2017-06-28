@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Person.java" afterPath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" afterPath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" />
-    </list>
+    <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="40" column="146" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="146" />
               <folding>
                 <element signature="e#361#362#0" expanded="true" />
                 <element signature="e#391#392#0" expanded="true" />
@@ -111,6 +108,25 @@
                 <element signature="e#655#656#0" expanded="true" />
                 <element signature="e#693#694#0" expanded="true" />
                 <element signature="e#723#724#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Staff.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#372#373#0" expanded="true" />
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#546#547#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/BonusWork/Bonus18.java" />
         <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Person.java" />
         <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java" />
       </list>
     </option>
   </component>
@@ -877,7 +894,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42536000" />
+    <option name="totallyTimeSpent" value="42737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -962,14 +979,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Labs/Lab1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="31" column="71" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Excercises/Excercise4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1319,8 +1328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="680">
+          <caret line="40" column="146" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="146" />
           <folding>
             <element signature="e#361#362#0" expanded="true" />
             <element signature="e#391#392#0" expanded="true" />
@@ -1334,6 +1343,23 @@
             <element signature="e#655#656#0" expanded="true" />
             <element signature="e#693#694#0" expanded="true" />
             <element signature="e#723#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
           </folding>
         </state>
       </provider>
