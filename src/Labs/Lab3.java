@@ -11,7 +11,6 @@ public class Lab3 {
         System.out.println("Learn your squares and cubes!");
         do {
             userInt = checkForValidInt();
-
             if (userInt < 0) {
                 printPowerTablesForNegativeInts(userInt);
             } else if (userInt >= 0) {
@@ -27,7 +26,7 @@ public class Lab3 {
 
     private static void printPowerTablesForPositiveInts(int userInt) {
         printHeader();
-        for (int i = 1; i <= userInt; i++) {
+        for (int i = 0; i <= userInt; i++) {
             System.out.println(i + "\t\t\t" + (int) Math.pow(i, 2) + "\t\t\t" + (int) Math.pow(i, 3));
         }
     }
