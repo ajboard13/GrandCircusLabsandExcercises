@@ -1,4 +1,4 @@
-package BonusWork.Bonus18;
+package BonusWork;
 
 import java.util.Scanner;
 

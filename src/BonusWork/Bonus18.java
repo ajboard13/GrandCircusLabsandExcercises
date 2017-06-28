@@ -1,4 +1,4 @@
-package BonusWork.Bonus18;
+package BonusWork;
 
 import java.util.Objects;
 import java.util.Scanner;
@@ -21,7 +21,7 @@ public class Bonus18 {
             IslandAdventure islandAdventure = new IslandAdventure(userName);
             islandAdventure.startIslandAdventure();
             System.out.println("Would you like to go again? (y/n)");
-            userCont = Objects.equals(input.next().toLowerCase(), "y");
+            userCont = input.next().equalsIgnoreCase("y");
         }
         System.out.println("\nGoodbye, " + userName + "!");
     }

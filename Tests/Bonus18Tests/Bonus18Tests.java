@@ -1,7 +1,7 @@
 package Bonus18Tests;
 
+import BonusWork.IslandAdventure;
 import org.junit.Test;
-import BonusWork.Bonus18.*;
 
 
 public class Bonus18Tests {
