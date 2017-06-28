@@ -20,7 +20,7 @@ public class Bonus18 {
         while (userCont){
             IslandAdventure islandAdventure = new IslandAdventure(userName);
             islandAdventure.startIslandAdventure();
-            System.out.println("Would you like to go agian? (y/n)");
+            System.out.println("Would you like to go again? (y/n)");
             userCont = Objects.equals(input.next().toLowerCase(), "y");
         }
         System.out.println("\nGoodbye, " + userName + "!");

@@ -6,24 +6,33 @@ public class Lab3 {
     public static void main(String[] args) {
         int userInt = 0;
         boolean validInt = false;
+        boolean userCont;
         Scanner input = new Scanner(System.in);
         System.out.println("Learn your squares and cubes!");
         do {
-            System.out.println("\nHello, please enter an integer: ");
-            if (input.hasNextInt()) {
-                userInt = input.nextInt();
-                validInt = true;
-            } else {
-                System.out.println("not an integer!");
-                input.nextLine();
-            }
-        } while (!validInt);
+            do {
+                System.out.println("\nHello, please enter an integer: ");
+                if (input.hasNextInt()) {
+                    userInt = input.nextInt();
+                    validInt = true;
+                } else {
+                    System.out.println("not an integer!");
+                    validInt = false;
+                    input.nextLine();
+                    input.nextLine();
+                }
+            } while (!validInt);
 
-        if (userInt < 0) {
-            printPowerTablesForNegativeInts(userInt);
-        } else if (userInt >= 0) {
-            printPowerTablesForPositiveInts(userInt);
-        }
+            if (userInt < 0) {
+                printPowerTablesForNegativeInts(userInt);
+            } else if (userInt >= 0) {
+                printPowerTablesForPositiveInts(userInt);
+            }
+            System.out.println("\nWould you like to go again? (y/n)");
+            userCont = input.next().toLowerCase().equalsIgnoreCase("y");
+        } while (userCont);
+
+        System.out.println("\nGoodbye!");
 
     }
 
@@ -43,6 +52,6 @@ public class Lab3 {
 
     private static void printHeader() {
         System.out.println("Number\t\tSquared\t\tCubed\n" +
-                            "======\t\t=======\t\t=====");
+                "======\t\t=======\t\t=====");
     }
 }
