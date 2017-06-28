@@ -41,6 +41,7 @@ class IslandAdventure {
             } else {
                 System.out.println("Not a valid choice!\n");
                 input.nextLine();
+                input.nextLine();
             }
         } while (isValidChoice);
     }
@@ -65,8 +66,13 @@ class IslandAdventure {
                                 break;
                             default:
                                 System.out.println("Not a valid choice!\n");
+                                input.nextLine();
                                 break;
                         }
+                    } else {
+                        System.out.println("Not a valid choice!\n");
+                        input.nextLine();
+                        input.nextLine();
                     }
                 } while (localChoice);
             } else {
@@ -88,8 +94,13 @@ class IslandAdventure {
                                 break;
                             default:
                                 System.out.println("Not a valid choice!\n");
+                                input.nextLine();
                                 break;
                         }
+                    } else {
+                        System.out.println("Not a valid choice!\n");
+                        input.nextLine();
+                        input.nextLine();
                     }
                 } while (localChoice);
             }
@@ -111,8 +122,13 @@ class IslandAdventure {
                             break;
                         default:
                             System.out.println("Not a valid choice!\n");
+                            input.nextLine();
                             break;
                     }
+                } else {
+                    System.out.println("Not a valid choice!\n");
+                    input.nextLine();
+                    input.nextLine();
                 }
             } while (localChoice);
         }
@@ -137,8 +153,13 @@ class IslandAdventure {
                         break;
                     default:
                         System.out.println("Not a valid choice!\n");
+                        input.nextLine();
                         break;
                 }
+            } else {
+                System.out.println("Not a valid choice!\n");
+                input.nextLine();
+                input.nextLine();
             }
         } while (localChoice);
     }
@@ -167,6 +188,7 @@ class IslandAdventure {
                                     break;
                                 default:
                                     System.out.println("Not a valid choice!\n");
+                                    input.nextLine();
                                     break;
                             }
                         }
@@ -175,6 +197,10 @@ class IslandAdventure {
                         System.out.println("Not a valid choice!\n");
                         break;
                 }
+            } else {
+                System.out.println("Not a valid choice!\n");
+                input.nextLine();
+                input.nextLine();
             }
         } while (localChoice);
     }
@@ -199,8 +225,13 @@ class IslandAdventure {
                         break;
                     default:
                         System.out.println("Not a valid choice!\n");
+                        input.nextLine();
                         break;
                 }
+            } else {
+                System.out.println("Not a valid choice!\n");
+                input.nextLine();
+                input.nextLine();
             }
         } while (localChoice);
     }
@@ -226,8 +257,13 @@ class IslandAdventure {
                         break;
                     default:
                         System.out.println("Not a valid choice!\n");
+                        input.nextLine();
                         break;
                 }
+            } else {
+                System.out.println("Not a valid choice!\n");
+                input.nextLine();
+                input.nextLine();
             }
         } while (localChoice);
     }
