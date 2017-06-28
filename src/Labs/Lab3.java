@@ -3,25 +3,14 @@ package Labs;
 import java.util.Scanner;
 
 public class Lab3 {
+    private static Scanner input = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int userInt = 0;
-        boolean validInt = false;
+        int userInt;
         boolean userCont;
-        Scanner input = new Scanner(System.in);
         System.out.println("Learn your squares and cubes!");
         do {
-            do {
-                System.out.println("\nHello, please enter an integer: ");
-                if (input.hasNextInt()) {
-                    userInt = input.nextInt();
-                    validInt = true;
-                } else {
-                    System.out.println("not an integer!");
-                    validInt = false;
-                    input.nextLine();
-                    input.nextLine();
-                }
-            } while (!validInt);
+            userInt = checkForValidInt();
 
             if (userInt < 0) {
                 printPowerTablesForNegativeInts(userInt);
@@ -53,5 +42,23 @@ public class Lab3 {
     private static void printHeader() {
         System.out.println("Number\t\tSquared\t\tCubed\n" +
                 "======\t\t=======\t\t=====");
+    }
+
+    private static int checkForValidInt(){
+        boolean validInt;
+        int userInt = 0;
+        do {
+            System.out.println("\nHello, please enter an integer: ");
+            if (input.hasNextInt()) {
+                userInt = input.nextInt();
+                validInt = true;
+            } else {
+                System.out.println("not an integer!");
+                validInt = false;
+                input.nextLine();
+                input.nextLine();
+            }
+        } while (!validInt);
+        return userInt;
     }
 }
