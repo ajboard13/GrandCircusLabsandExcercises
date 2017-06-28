@@ -7,24 +7,29 @@ import java.util.Scanner;
  */
 
 public class WeekOne {
+
     public static void main(String[] args) {
-//        Scanner input = new Scanner(System.in);
-//
-//        System.out.print("Enter a age: ");
-//        String age = input.nextLine();
-//
-//        Integer.parseInt(age);
-//
-//        System.out.print("Enter an name: ");
-//        String name = input.nextLine();
-//
-//        System.out.println(name + " " + age);
-//
-//
-//        int newAge = 33;
-//        int newestAge;
-//        newestAge = 34;
-//        input.close();
+        day3();
+    }
+
+    private static void day2(){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a age: ");
+        String age = input.nextLine();
+
+        Integer.parseInt(age);
+
+        System.out.print("Enter an name: ");
+        String name = input.nextLine();
+
+        System.out.println(name + " " + age);
+
+
+        int newAge = 33;
+        int newestAge;
+        newestAge = 34;
+        input.close();
 
 
         //implicit casting example
@@ -79,6 +84,21 @@ public class WeekOne {
                 break;
         }
 
+    }
+
+    private static void day3(){
+        System.out.println("Hello World");
+        Scanner input = new Scanner(System.in);
+
+        String choice = "y";
+        while (choice.equalsIgnoreCase("y")){
+            System.out.println("Continue? (y/n) ");
+            choice = input.nextLine();
+
+        }
+
+        System.out.println("Goodbye");
 
     }
 }
+
