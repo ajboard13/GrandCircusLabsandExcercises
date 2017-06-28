@@ -3,9 +3,7 @@ package BonusWork.Bonus18;
 import java.util.Objects;
 import java.util.Scanner;
 
-/**
- * Created by user on 6/27/2017.
- */
+
 public class Bonus18 {
 
 
