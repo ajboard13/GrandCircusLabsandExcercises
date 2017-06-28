@@ -17,7 +17,7 @@ public class Lab3 {
                 printPowerTablesForPositiveInts(userInt);
             }
             System.out.println("\nWould you like to go again? (y/n)");
-            userCont = input.next().toLowerCase().equalsIgnoreCase("y");
+            userCont = input.next().equalsIgnoreCase("y");
         } while (userCont);
 
         System.out.println("\nGoodbye!");
