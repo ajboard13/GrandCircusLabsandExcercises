@@ -2,9 +2,6 @@ package InClassWork;
 
 import java.util.Scanner;
 
-/**
- * Created by user on 6/27/2017.
- */
 
 public class WeekOne {
 

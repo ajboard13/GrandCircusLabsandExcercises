@@ -2,14 +2,14 @@ package BonusWork.Bonus18;
 
 import java.util.Scanner;
 
-class IslandAdventure {
+public class IslandAdventure {
     private String userName;
     private boolean isValidEnding = true;
     private boolean defeatedWolf = false;
     private boolean retrievedIdol = false;
     private Scanner input = new Scanner(System.in);
 
-    IslandAdventure(String userName) {
+    public IslandAdventure(String userName) {
         this.userName = userName;
     }
 
