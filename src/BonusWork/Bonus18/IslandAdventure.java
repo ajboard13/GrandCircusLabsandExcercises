@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class IslandAdventure {
     private String userName;
-    private boolean isValidChoice = true;
+    private boolean isValidEnding = true;
     private boolean defeatedWolf = false;
     private boolean retrievedIdol = false;
     private Scanner input = new Scanner(System.in);
@@ -43,7 +43,7 @@ class IslandAdventure {
                 input.nextLine();
                 input.nextLine();
             }
-        } while (isValidChoice);
+        } while (isValidEnding);
     }
 
     private void villageEncounter() {
@@ -61,7 +61,7 @@ class IslandAdventure {
                                 break;
                             case 2:
                                 System.out.println("The villagers attack you. You died.\n");
-                                isValidChoice = false;
+                                isValidEnding = false;
                                 localChoice = false;
                                 break;
                             default:
@@ -84,12 +84,12 @@ class IslandAdventure {
                         switch (input.nextInt()) {
                             case 1:
                                 System.out.println("The village chases after you for the idol! You Died!");
-                                isValidChoice = false;
+                                isValidEnding = false;
                                 localChoice = false;
                                 break;
                             case 2:
                                 System.out.println("The villagers help you find civilization. Congratulations, " + userName + "!\n");
-                                isValidChoice = false;
+                                isValidEnding = false;
                                 localChoice = false;
                                 break;
                             default:
@@ -117,7 +117,7 @@ class IslandAdventure {
                             break;
                         case 2:
                             System.out.println("The villagers help you find civilization. Congratulations, " + userName + "!\n");
-                            isValidChoice = false;
+                            isValidEnding = false;
                             localChoice = false;
                             break;
                         default:
@@ -214,7 +214,7 @@ class IslandAdventure {
                 switch (input.nextInt()) {
                     case 1:
                         System.out.println("The wolf chases you down. You died!\n");
-                        isValidChoice = false;
+                        isValidEnding = false;
                         localChoice = false;
                         break;
                     case 2:
@@ -245,7 +245,7 @@ class IslandAdventure {
                 switch (input.nextInt()) {
                     case 1:
                         System.out.println("The shark chases you down. You died\n");
-                        isValidChoice = false;
+                        isValidEnding = false;
                         localChoice = false;
                         break;
                     case 2:
