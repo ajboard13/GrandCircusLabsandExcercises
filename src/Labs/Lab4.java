@@ -23,9 +23,8 @@ public class Lab4 {
 
     private static long calculateFactorial(int n) {
         long result;
-        if(n==0 || n==1)
+        if(n==1)
             return 1;
-
         result = calculateFactorial(n-1) * n;
         return result;
     }
