@@ -40,29 +40,21 @@ public class Lab3 {
 
     private static void printHeader() {
         System.out.printf("%-16s%-16s%-16s\n%-16s%-16s%-16s",
-                            "Number",
-                            "Squared",
-                            "Cubed",
-                            "======",
-                            "=======",
-                            "=====");
+                "Number",
+                "Squared",
+                "Cubed",
+                "======",
+                "=======",
+                "=====");
     }
 
-    private static int checkForValidInt(){
-        boolean validInt;
-        int userInt = 0;
-        do {
-            System.out.println("\nHello, please enter an integer: ");
-            if (input.hasNextInt()) {
-                userInt = input.nextInt();
-                validInt = true;
-            } else {
-                System.out.println("not an integer!");
-                validInt = false;
-                input.nextLine();
-                input.nextLine();
-            }
-        } while (!validInt);
+    private static int checkForValidInt() {
+        System.out.println("\nHello, please enter an integer: ");
+        while (!input.hasNextInt()) {
+            System.out.println("not an integer! Please enter an integer: ");
+            input.nextLine();
+        }
+        userInt = input.nextInt();
         return userInt;
     }
 }
