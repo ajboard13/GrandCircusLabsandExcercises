@@ -2,12 +2,12 @@ package Labs;
 
 import java.util.Scanner;
 
-class InputValidator {
+public class InputValidator {
     private boolean userCont;
     private int userInt;
     private Scanner input = new Scanner(System.in);
 
-    int getValidIntBetweenTwoNumbers(int minNum, int maxNum) {
+    public int getValidIntBetweenTwoNumbers(int minNum, int maxNum) {
         do {
             System.out.print("\nEnter an integer that's greater than "+minNum+" but less than "+maxNum+": ");
             checkForValidInt();
@@ -16,7 +16,7 @@ class InputValidator {
         return userInt;
     }
 
-    private void checkForValidInt() {
+    public void checkForValidInt() {
         while (!input.hasNextInt()) {
             System.out.println("not an integer! Please enter an integer: ");
             input.nextLine();
@@ -31,7 +31,7 @@ class InputValidator {
         }
     }
 
-    void checkForUserContinue() {
+    public void checkForUserContinue() {
         boolean validChoice = true;
         do {
             System.out.println("\nWould you like to go again? (y/n)");
@@ -57,11 +57,11 @@ class InputValidator {
         return validChoice;
     }
 
-    boolean isUserCont() {
+    public boolean isUserCont() {
         return userCont;
     }
 
-    int getUserInt() {
+    public int getUserInt() {
         return userInt;
     }
 }
