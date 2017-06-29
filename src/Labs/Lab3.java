@@ -27,19 +27,19 @@ public class Lab3 {
     private static void printPowerTablesForPositiveInts() {
         printHeader();
         for (int i = 0; i <= userInt; i++) {
-            System.out.printf("\n%16d%16d%16d", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
+            System.out.printf("\n%-16d%-16d%-16d", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
         }
     }
 
     private static void printPowerTablesForNegativeInts() {
         printHeader();
         for (int i = -1; i >= userInt; i--) {
-            System.out.printf("\n%16d%16d%16d", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
+            System.out.printf("\n%-16d%-16d%-16d", i, (int) Math.pow(i, 2), (int) Math.pow(i, 3));
         }
     }
 
     private static void printHeader() {
-        System.out.printf("%16s%16s%16s\n%16s%16s%16s",
+        System.out.printf("%-16s%-16s%-16s\n%-16s%-16s%-16s",
                             "Number",
                             "Squared",
                             "Cubed",

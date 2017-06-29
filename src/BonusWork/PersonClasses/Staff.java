@@ -30,6 +30,6 @@ public class Staff extends Person{
     }
 
     public String toString(){
-        return "name = " + super.getName() + "\naddress = " + super.getAddress() + "school = " + school + "\npay = " + pay;
+        return "name = " + super.getName() + "\naddress = " + super.getAddress() + "\nschool = " + school + "\npay = $" + pay;
     }
 }
