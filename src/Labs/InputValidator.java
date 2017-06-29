@@ -12,7 +12,7 @@ class InputValidator {
             System.out.print("\nEnter an integer that's greater than "+minNum+" but less than "+maxNum+": ");
             checkForValidInt();
             checkForIntBetweenTwoNumbers(minNum, maxNum);
-        } while (userInt <= 0 && userInt < 20);
+        } while (userInt <= minNum && userInt < maxNum);
         return userInt;
     }
 
