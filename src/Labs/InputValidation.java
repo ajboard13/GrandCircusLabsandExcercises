@@ -2,7 +2,7 @@ package Labs;
 
 import java.util.Scanner;
 
-class InputValidation {
+class InputValidator {
     private boolean userCont;
     private int userInt;
     private Scanner input = new Scanner(System.in);

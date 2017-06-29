@@ -7,7 +7,7 @@ Aaron Board
 This program will give you a factorial for any number between 1 and 20
 */
 public class Lab4 {
-    private static InputValidation inputValidation = new InputValidation();
+    private static InputValidator inputValidator = new InputValidator();
 
     public static void main(String[] args) {
         long factorialResult;
@@ -15,11 +15,11 @@ public class Lab4 {
         int maxNum = 20;
         System.out.println("Welcome to the Factorial Calculator!\n");
         do {
-            int userInt = inputValidation.getValidIntBetweenTwoNumbers(minNum, maxNum);
+            int userInt = inputValidator.getValidIntBetweenTwoNumbers(minNum, maxNum);
             factorialResult = calculateFactorial(userInt);
             System.out.println("The factorial of " + userInt + " is " + factorialResult);
-            inputValidation.checkForUserContinue();
-        } while (inputValidation.isUserCont());
+            inputValidator.checkForUserContinue();
+        } while (inputValidator.isUserCont());
         System.out.println("Goodbye!");
     }
 
