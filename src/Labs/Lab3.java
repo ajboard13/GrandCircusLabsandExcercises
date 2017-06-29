@@ -2,6 +2,13 @@ package Labs;
 
 import java.util.Scanner;
 
+/*
+Aaron Board
+
+this program will take a number entered by a user and
+ print a table of cubes and squares up to that number
+ */
+
 public class Lab3 {
     private static Scanner input = new Scanner(System.in);
     private static int userInt;

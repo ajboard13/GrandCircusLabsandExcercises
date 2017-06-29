@@ -15,8 +15,7 @@ public class Lab4 {
         int maxNum = 20;
         System.out.println("Welcome to the Factorial Calculator!\n");
         do {
-            inputValidation.getValidIntBetweenTwoNumbers(minNum, maxNum);
-            int userInt = inputValidation.getUserInt();
+            int userInt = inputValidation.getValidIntBetweenTwoNumbers(minNum, maxNum);
             factorialResult = calculateFactorial(userInt);
             System.out.println("The factorial of " + userInt + " is " + factorialResult);
             inputValidation.checkForUserContinue();
