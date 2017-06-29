@@ -19,7 +19,8 @@ public class Lab5 {
             if (numDice == 2 && numSides == 6) {
                 rollTwoDice(numSides);
             } else {
-                rollAllDice(numDice, numSides);
+                int[] results = rollAllDice(numDice, numSides);
+                printResults(results);
             }
             inputValidator.checkForUserContinue();
         } while (inputValidator.isUserCont());
@@ -27,15 +28,22 @@ public class Lab5 {
 
     }
 
+    private static void printResults(int[] results) {
+        for (int i = 1; i <= results.length; i++) {
+            printResult(i, results[i-1]);
+        }
+    }
+
     private static void rollTwoDice(int numSides) {
         Dice dice = new Dice(numSides);
         int result1 = dice.rollDice();
         int result2 = dice.rollDice();
-
         printResult(1, result1);
         printResult(2, result2);
         dice.casinoGame(result1,result2);
     }
+
+
 
     private static void printResult(int i, int result) {
         System.out.println("Dice " + i + ": " + result);
@@ -56,11 +64,12 @@ public class Lab5 {
         return inputValidator.getUserInt();
     }
 
-    private static void rollAllDice(int numDice, int numSides) {
+    private static int[] rollAllDice(int numDice, int numSides) {
         Dice dice = new Dice(numSides);
-        for (int i = 1; i <= numDice; i++) {
-            int result = dice.rollDice();
-            printResult(i, result);
+        int[] results = new int[numDice];
+        for (int i = 0; i < numDice; i++) {
+            results[i] = dice.rollDice();
         }
+        return results;
     }
 }
