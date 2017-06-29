@@ -31,10 +31,10 @@ public class Lab4 {
 
     private static void getValidInput() {
         do {
-            System.out.print("\nEnter an integer that's greater than 0 but less than 63: ");
+            System.out.print("\nEnter an integer that's greater than 0 but less than 20: ");
             checkForValidInt();
             checkForIntBetweenOneAndTen();
-        } while (userInt <= 0 && userInt < 63);
+        } while (userInt <= 0 && userInt < 20);
     }
 
     private static void checkForValidInt() {
@@ -46,8 +46,8 @@ public class Lab4 {
     }
 
     private static void checkForIntBetweenOneAndTen() {
-        while (userInt <= 0 || userInt > 63) {
-            System.out.println("Not between 1 and 63! Please enter an integer: ");
+        while (userInt <= 0 || userInt > 20) {
+            System.out.println("Not between 1 and 20! Please enter an integer: ");
             checkForValidInt();
         }
     }
