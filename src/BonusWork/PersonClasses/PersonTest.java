@@ -10,10 +10,15 @@ public class PersonTest {
     static int userInt = 0;
     static String toStringResult;
     public static void main(String[] args) {
+        boolean userCont;
 
-        checkForValidInt();
-        chosePersonType();
-        System.out.println(toStringResult);
+        do {
+            checkForValidInt();
+            chosePersonType();
+            System.out.println(toStringResult);
+            System.out.println("\nWould you like to go again? (y/n)");
+            userCont = input.next().equalsIgnoreCase("y");
+        }while (userCont);
 
     }
 

@@ -38,7 +38,7 @@ public class Student extends Person{
     }
 
     public String toString(){
-        return "name = " + super.getName() + "\naddress = " + super.getAddress() + "program = " + program + "\nyear = " + year + "\nfee = " + fee;
+        return "name = " + super.getName() + "\naddress = " + super.getAddress() + "\nprogram = " + program + "\nyear = " + year + "\nfee = " + fee;
     }
 
 }

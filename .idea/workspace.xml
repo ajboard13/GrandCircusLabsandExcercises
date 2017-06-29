@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GrandCircusWork/BonusWork/Bonus18/Bonus18.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GrandCircusWork/BonusWork/Bonus18/IslandAdventure.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/GrandCircusWork/Bonus18Tests/Bonus18Tests.class" afterPath="$PROJECT_DIR$/out/test/GrandCircusWork/Bonus18Tests/Bonus18Tests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java" afterPath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab3.java" afterPath="$PROJECT_DIR$/src/Labs/Lab3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java" afterPath="$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" afterPath="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,21 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Lab3.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lab3.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+            <state relative-caret-position="357">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="19" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PersonTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="40" column="86" lean-forward="false" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -113,10 +119,10 @@
         <option value="$PROJECT_DIR$/src/BonusWork/Bonus18/Bonus18.java" />
         <option value="$PROJECT_DIR$/src/BonusWork/Bonus18.java" />
         <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Person.java" />
-        <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" />
         <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java" />
-        <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab3.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java" />
       </list>
     </option>
   </component>
@@ -306,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lab3">
+  <component name="RunManager" selected="Application.PersonTest">
     <configuration default="false" name="WhileLoopEx2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -809,8 +815,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Lab3" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PersonTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PersonTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Lab3" />
         <item index="2" class="java.lang.String" itemvalue="Application.Bonus18" />
         <item index="3" class="java.lang.String" itemvalue="Application.WhileLoopEx2" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.ForLoopExTests" />
@@ -854,7 +860,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44242000" />
+    <option name="totallyTimeSpent" value="44485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -867,7 +873,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -879,7 +884,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33296338" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33296338" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1221,27 +1226,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="146" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="146" />
-          <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Staff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1261,18 +1245,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Labs/Lab3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="357">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="19" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/Lab3.java">
+    <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="40" column="86" lean-forward="false" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
-          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>
