@@ -4,36 +4,38 @@ package Labs;
 import java.util.Scanner;
 
 public class Lab4 {
-    private static long factorialResult = 1;
     private static int userInt;
     private static Scanner input = new Scanner(System.in);
     private static boolean userCont;
 
 
     public static void main(String[] args) {
+        long factorialResult;
         System.out.println("Welcome to the Factorial Calculator!\n");
         do {
             getValidInput();
-            calculateFactorial();
+            factorialResult = calculateFactorial(userInt);
             System.out.println("The factorial of " + userInt + " is " + factorialResult);
             checkForUserContinue();
         } while (userCont);
         System.out.println("Goodbye!");
     }
 
-    private static void calculateFactorial() {
-        factorialResult = 1;
-        for (int i = 2; i <= userInt; i++) {
-            factorialResult *= i;
-        }
+    private static long calculateFactorial(int n) {
+        long result;
+        if(n==0 || n==1)
+            return 1;
+
+        result = calculateFactorial(n-1) * n;
+        return result;
     }
 
     private static void getValidInput() {
         do {
-            System.out.print("\nEnter an integer that's greater than 0 but less than 65: ");
+            System.out.print("\nEnter an integer that's greater than 0 but less than 63: ");
             checkForValidInt();
             checkForIntBetweenOneAndTen();
-        } while (userInt <= 0 && userInt < 65);
+        } while (userInt <= 0 && userInt < 63);
     }
 
     private static void checkForValidInt() {
@@ -45,8 +47,8 @@ public class Lab4 {
     }
 
     private static void checkForIntBetweenOneAndTen() {
-        while (userInt <= 0 || userInt > 65) {
-            System.out.println("Not between 1 and 65! Please enter an integer: ");
+        while (userInt <= 0 || userInt > 63) {
+            System.out.println("Not between 1 and 63! Please enter an integer: ");
             checkForValidInt();
         }
     }
