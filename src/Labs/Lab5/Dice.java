@@ -1,18 +1,26 @@
 package Labs.Lab5;
 
-/**
- * Created by user on 6/29/2017.
- */
-public class Dice {
+
+class Dice {
     private int numOfSides;
 
-    public Dice(int numOfSides) {
+    Dice(int numOfSides) {
         this.numOfSides = numOfSides;
     }
 
-    public int rollDice(){
+    int rollDice(){
         int result = (int) (Math.random() * (numOfSides+1));
         return result;
+    }
+
+    void casinoGame(int result1, int result2){
+        if ((result1 + result2) == 1) {
+            System.out.println("\tSnake eyes!");
+        } else if ((result1 + result2) == 7) {
+            System.out.println("\tCraps!");
+        } else if ((result1 + result2) == 12) {
+            System.out.println("\tBox cars!");
+        }
     }
 
 }
