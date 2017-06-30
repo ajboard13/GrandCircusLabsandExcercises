@@ -64,8 +64,7 @@ public class Lab5 {
     }
 
     private static int askForInt() {
-        inputValidator.checkForValidInt();
-        return inputValidator.getUserInt();
+        return inputValidator.getValidInt();
     }
 
     private static int[] rollAllDice(int numDice, int numSides) {

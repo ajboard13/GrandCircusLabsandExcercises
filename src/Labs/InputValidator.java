@@ -10,24 +10,34 @@ public class InputValidator {
     public int getValidIntBetweenTwoNumbers(int minNum, int maxNum) {
         do {
             System.out.print("\nEnter an integer that's greater than "+minNum+" but less than "+maxNum+": ");
-            checkForValidInt();
+            getValidInt();
             checkForIntBetweenTwoNumbers(minNum, maxNum);
         } while (userInt <= minNum && userInt < maxNum);
         return userInt;
     }
 
-    public void checkForValidInt() {
-        while (!input.hasNextInt()) {
+    public int getValidInt() {
+//        while (!input.hasNextInt()) {
+//            input.nextLine();
+//            System.out.println("not an integer! Please enter an integer: ");
+//        }
+        boolean validInt = false;
+        do {
+            if (input.hasNextInt()) {
+                userInt = input.nextInt();
+                validInt = true;
+            } else {
+                System.out.println("not an integer! Please enter an integer: ");
+            }
             input.nextLine();
-            System.out.println("not an integer! Please enter an integer: ");
-        }
-        userInt = input.nextInt();
+        }while (!validInt);
+        return userInt;
     }
 
     private void checkForIntBetweenTwoNumbers(int minNumber, int maxNumber) {
         while (userInt <= minNumber || userInt > maxNumber) {
             System.out.println("Not between "+ minNumber+" and "+maxNumber+"! Please enter an integer: ");
-            checkForValidInt();
+            getValidInt();
         }
     }
 
