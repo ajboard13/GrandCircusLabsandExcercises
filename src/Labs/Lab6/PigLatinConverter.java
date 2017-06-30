@@ -21,7 +21,7 @@ class PigLatinConverter {
         List<String> userWords = getWords();
         boolean isContraction;
         for (String word : userWords) {
-            if (word.matches("(?i)^[aeiouy].*$")){
+            if (word.matches("(?i)^[aeiou].*$")){
                 isContraction = checkForContraction(word);
                 if (!isContraction) {
                     result.append(convertWordStartingWithVowel(word)).append(" ");
