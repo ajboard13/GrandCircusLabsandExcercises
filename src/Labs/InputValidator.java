@@ -18,8 +18,8 @@ public class InputValidator {
 
     public void checkForValidInt() {
         while (!input.hasNextInt()) {
-            System.out.println("not an integer! Please enter an integer: ");
             input.nextLine();
+            System.out.println("not an integer! Please enter an integer: ");
         }
         userInt = input.nextInt();
     }

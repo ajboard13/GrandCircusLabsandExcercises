@@ -2,10 +2,12 @@ package Labs.Lab5;
 
 import Labs.InputValidator;
 /*
+
 Aaron Board
 6/29/2017
 
 This program takes n-sided dice and prints the result
+
  */
 
 public class Lab5 {
@@ -13,6 +15,12 @@ public class Lab5 {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Grand Circus Casino!");
+        runCasinoGame();
+        System.out.println("Goodbye");
+
+    }
+
+    private static void runCasinoGame(){
         do {
             int numDice = askForNumDice();
             int numSides = askForNumSides();
@@ -24,8 +32,6 @@ public class Lab5 {
             }
             inputValidator.checkForUserContinue();
         } while (inputValidator.isUserCont());
-        System.out.println("Goodbye");
-
     }
 
     private static void printResults(int[] results) {

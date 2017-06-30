@@ -9,8 +9,7 @@ class Dice {
     }
 
     int rollDice(){
-        int result = (int) (Math.random() * (numOfSides+1));
-        return result;
+        return (int) (Math.random() * (numOfSides) + 1);
     }
 
     void casinoGame(int result1, int result2){
