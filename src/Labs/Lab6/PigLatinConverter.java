@@ -11,26 +11,30 @@ import java.util.List;
  */
 public class PigLatinConverter {
     private String userLine;
-    private char[] VOWELS = new char[5];
+    final static String VOWELS = "aeiou";
 
     public PigLatinConverter(String userLine) {
         this.userLine = userLine;
     }
 
-    public String convertToPigLatin(){
-        String result = "a";
+    public StringBuffer convertToPigLatin(){
+        StringBuffer result = new StringBuffer();
         List<String> userWords = getWords();
         for (String word : userWords) {
             if (word.matches("(?i)^[aeiouy].*$")){
-
+                result.append(convertWordStartingWithVowel(word) + " ");
+            } else {
+                result.append(convertWordStartingWithConsonant(word) + " ");
             }
         }
 
         return result;
     }
 
+
+    //this method puts the word of the sentence into an array of words.
     private List<String> getWords() {
-        List<String> words = new ArrayList<String>();
+        List<String> words = new ArrayList<>();
         BreakIterator breakIterator = BreakIterator.getWordInstance();
         breakIterator.setText(userLine);
         int lastIndex = breakIterator.first();
@@ -43,5 +47,33 @@ public class PigLatinConverter {
         }
 
         return words;
+    }
+
+    private StringBuffer convertWordStartingWithVowel(String word){
+        StringBuffer result = new StringBuffer(word);
+        result.append("say");
+        return result;
+    }
+
+    private StringBuffer convertWordStartingWithConsonant(String word) {
+        StringBuffer result = new StringBuffer(word);
+        int firstVowel = indexOfFirstVowel(word);
+        if (firstVowel != -1) {
+            result.append(result.substring(0, firstVowel) + "ay");
+            result.delete(0,firstVowel);
+        }
+        return result;
+    }
+
+    public static int indexOfFirstVowel(String word){
+        for (int index = 0; index < word.length(); index++)
+        {
+            if (VOWELS.contains(String.valueOf(word.toLowerCase().charAt(index))))
+            {
+                return index;
+            }
+        }
+        // handle cases where a vowel is not found
+        return -1;
     }
 }

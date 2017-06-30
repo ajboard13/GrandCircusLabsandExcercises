@@ -2,12 +2,10 @@ package Labs.Lab5;
 
 import Labs.InputValidator;
 /*
-
 Aaron Board
 6/29/2017
 
 This program takes n-sided dice and prints the result
-
  */
 
 public class Lab5 {
