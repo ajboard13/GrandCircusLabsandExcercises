@@ -71,7 +71,4 @@ public class InputValidator {
         return userCont;
     }
 
-    public int getUserInt() {
-        return userInt;
-    }
 }

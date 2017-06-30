@@ -1,30 +1,40 @@
 package Labs.Lab6;
 
-import com.sun.xml.internal.fastinfoset.util.CharArray;
-
 import java.text.BreakIterator;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by user on 6/30/2017.
+/*
+Aaron Board
+6/30/2017
  */
-public class PigLatinConverter {
+class PigLatinConverter {
     private String userLine;
-    final static String VOWELS = "aeiou";
+    private final static String VOWELS = "aeiou";
 
-    public PigLatinConverter(String userLine) {
+    PigLatinConverter(String userLine) {
         this.userLine = userLine;
     }
 
-    public StringBuffer convertToPigLatin(){
+    StringBuffer convertToPigLatin(){
         StringBuffer result = new StringBuffer();
         List<String> userWords = getWords();
+        boolean isContraction;
         for (String word : userWords) {
             if (word.matches("(?i)^[aeiouy].*$")){
-                result.append(convertWordStartingWithVowel(word) + " ");
+                isContraction = checkForContraction(word);
+                if (!isContraction) {
+                    result.append(convertWordStartingWithVowel(word)).append(" ");
+                }else {
+                    result.append(word).append(" ");
+                }
             } else {
-                result.append(convertWordStartingWithConsonant(word) + " ");
+                isContraction = checkForContraction(word);
+                if (!isContraction) {
+                    result.append(convertWordStartingWithConsonant(word)).append(" ");
+                }else {
+                    result.append(word).append(" ");
+                }
             }
         }
 
@@ -59,13 +69,13 @@ public class PigLatinConverter {
         StringBuffer result = new StringBuffer(word);
         int firstVowel = indexOfFirstVowel(word);
         if (firstVowel != -1) {
-            result.append(result.substring(0, firstVowel) + "ay");
+            result.append(result.substring(0, firstVowel)).append("ay");
             result.delete(0,firstVowel);
         }
         return result;
     }
 
-    public static int indexOfFirstVowel(String word){
+    private static int indexOfFirstVowel(String word){
         for (int index = 0; index < word.length(); index++)
         {
             if (VOWELS.contains(String.valueOf(word.toLowerCase().charAt(index))))
@@ -75,5 +85,16 @@ public class PigLatinConverter {
         }
         // handle cases where a vowel is not found
         return -1;
+    }
+
+    private static boolean checkForContraction(String word){
+        for (int index = 0; index < word.length(); index++)
+        {
+            if ("'".contains(String.valueOf(word.toLowerCase().charAt(index))))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -3,9 +3,11 @@ package Labs.Lab6;
 import Labs.InputValidator;
 
 import java.util.Scanner;
+/*
+Aaron Board
+6/30/2017
 
-/**
- * Created by user on 6/30/2017.
+this program takes a user entered sentence and converts it to pig latin
  */
 public class Lab6 {
     public static void main(String[] args) {
