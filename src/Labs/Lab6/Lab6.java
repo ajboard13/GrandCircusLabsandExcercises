@@ -25,5 +25,6 @@ public class Lab6 {
             System.out.println(pigLatinConverter.convertToPigLatin());
             inputValidator.checkForUserContinue();
         }while (inputValidator.isUserCont());
+        System.out.println("Goodbye!");
     }
 }
