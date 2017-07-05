@@ -2,7 +2,6 @@ package Labs.Lab7;
 
 import Labs.InputValidator;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*
