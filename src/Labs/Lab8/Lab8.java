@@ -14,22 +14,41 @@ public class Lab8 {
     private static int[][] playerResultsTable;
     public static void main(String[] args) {
         System.out.println("Welcome to Batting Average Calculator!");
+        runBattingCalculator();
+    }
+
+    private static void runBattingCalculator(){
+        do {
+            getNumBatters();
+            populateArray();
+            printResults();
+            inputValidator.checkForUserContinue("\n\nWould you like to calculate another team's stats? (y/n)");
+        }while (inputValidator.isUserCont());
+    }
+
+    private static void getNumBatters(){
         System.out.println("How many batters are there?");
         int numBatters = inputValidator.getValidInt();
         playerResultsTable =  new int [numBatters][4];
+    }
+
+    private static void populateArray(){
         for (int i = 0; i < playerResultsTable.length; i++) {
             playerResultsTable[i][0] = i+1;
             playerResultsTable[i][1] = getNumberOfAtBats(i);
             playerResultsTable[i][2] = sumTotalNumberOfBases(playerResultsTable[i][1], i);
         }
+    }
 
-        for (int i = 0; i < playerResultsTable.length; i++) {
-            double numAtBats = playerResultsTable[i][1];
-            double totalBases = playerResultsTable[i][2];
-            double onBaseHits = playerResultsTable[i][3];
+    private static void printResults(){
+        System.out.println("\nRESULTS:");
+        for (int[] aPlayerResultsTable : playerResultsTable) {
+            double numAtBats = aPlayerResultsTable[1];
+            double totalBases = aPlayerResultsTable[2];
+            double onBaseHits = aPlayerResultsTable[3];
             double battingAverage = calculateBattingAverage(onBaseHits, numAtBats);
-            double sluggingPercentage = calculateSluggingPercentage(totalBases,numAtBats);
-            System.out.printf("\nBatter %d average: %.3f\t\tslugging percentage: %.3f", playerResultsTable[i][0],battingAverage,sluggingPercentage);
+            double sluggingPercentage = calculateSluggingPercentage(totalBases, numAtBats);
+            System.out.printf("\nBatter %d average: %.3f\t\tslugging percentage: %.3f", aPlayerResultsTable[0], battingAverage, sluggingPercentage);
         }
     }
 
@@ -57,6 +76,7 @@ public class Lab8 {
         System.out.println("\nHow many at bats did player "+(i+1)+" have?");
         return inputValidator.getValidInt();
     }
+
     private static int sumTotalNumberOfBases(int atBats, int j){
         int totalBases;
         int[] result = new int[atBats];
