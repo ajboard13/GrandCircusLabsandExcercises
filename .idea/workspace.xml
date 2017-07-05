@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/Lab6/Lab6.class" afterPath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/Lab6/Lab6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/Lab6/PigLatinConverter.class" afterPath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/Lab6/PigLatinConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/InputValidator.java" afterPath="$PROJECT_DIR$/src/Labs/InputValidator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab4.java" afterPath="$PROJECT_DIR$/src/Labs/Lab4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab5/Lab5.java" afterPath="$PROJECT_DIR$/src/Labs/Lab5/Lab5.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab6/Lab6.java" afterPath="$PROJECT_DIR$/src/Labs/Lab6/Lab6.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab7/Lab7.java" afterPath="$PROJECT_DIR$/src/Labs/Lab7/Lab7.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Lab3.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Lab3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="21">
               <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding />
             </state>
@@ -37,8 +38,8 @@
       <file leaf-file-name="Lab4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="315">
+              <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -57,8 +58,8 @@
       <file leaf-file-name="Lab5.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab5/Lab5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="189">
+              <caret line="30" column="85" lean-forward="false" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
               <folding />
             </state>
           </provider>
@@ -67,11 +68,11 @@
       <file leaf-file-name="InputValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+            <state relative-caret-position="176">
+              <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
               <folding>
-                <element signature="e#2804#2805#0" expanded="true" />
-                <element signature="e#2835#2836#0" expanded="true" />
+                <element signature="e#2786#2787#0" expanded="true" />
+                <element signature="e#2817#2818#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lab7.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Lab7.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab7/Lab7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="315">
+              <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +105,8 @@
       <file leaf-file-name="Lab6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab6/Lab6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+            <state relative-caret-position="357">
+              <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,15 +173,15 @@
         <option value="$PROJECT_DIR$/src/BonusWork/PersonClasses/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab3.java" />
         <option value="$PROJECT_DIR$/src/Labs/InputValidation.java" />
-        <option value="$PROJECT_DIR$/src/Labs/Lab4.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab5/Dice.java" />
         <option value="$PROJECT_DIR$/src/InClassWork/Day5Exceptions.java" />
-        <option value="$PROJECT_DIR$/src/Labs/Lab5/Lab5.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab6Alternative.java" />
-        <option value="$PROJECT_DIR$/src/Labs/Lab6/Lab6.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab6/PigLatinConverter.java" />
         <option value="$PROJECT_DIR$/src/Labs/InputValidator.java" />
+        <option value="$PROJECT_DIR$/src/Labs/Lab6/Lab6.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab7/Lab7.java" />
+        <option value="$PROJECT_DIR$/src/Labs/Lab5/Lab5.java" />
+        <option value="$PROJECT_DIR$/src/Labs/Lab4.java" />
       </list>
     </option>
   </component>
@@ -910,7 +911,7 @@
       <workItem from="1498571987701" duration="1227000" />
       <workItem from="1498574290022" duration="17174000" />
       <workItem from="1498612033870" duration="2668000" />
-      <workItem from="1499100245322" duration="10211000" />
+      <workItem from="1499100245322" duration="10346000" />
     </task>
     <servers />
   </component>
@@ -932,7 +933,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88966000" />
+    <option name="totallyTimeSpent" value="89101000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1236,14 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/Lab3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/InClassWork/WhileLoopEx2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -1294,22 +1287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/Lab5/Lab5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="39" lean-forward="false" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/Lab4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/Lab6Alternative.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-441">
@@ -1320,21 +1297,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/Lab6/Lab6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+        <state relative-caret-position="357">
+          <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/InputValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/Labs/Lab7/Lab7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        <state relative-caret-position="315">
+          <caret line="38" column="50" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
           <folding>
-            <element signature="e#2804#2805#0" expanded="true" />
-            <element signature="e#2835#2836#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1349,13 +1325,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/Lab7/Lab7.java">
+    <entry file="file://$PROJECT_DIR$/src/Labs/InputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        <state relative-caret-position="176">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2786#2787#0" expanded="true" />
+            <element signature="e#2817#2818#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/Lab5/Lab5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="30" column="85" lean-forward="false" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/Lab4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="85" lean-forward="false" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/Lab3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

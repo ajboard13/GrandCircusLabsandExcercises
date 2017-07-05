@@ -36,7 +36,7 @@ public class Lab7 {
                     firstName);
             int infoRequested = getInformationRequested();
             System.out.println(getInformationMessage(infoRequested, studentSelected, firstName));
-            inputValidator.checkForUserContinue();
+            inputValidator.checkForUserContinue("");
         }while (inputValidator.isUserCont());
         System.out.println("Goodbye!");
     }

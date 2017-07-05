@@ -41,10 +41,10 @@ public class InputValidator {
         }
     }
 
-    public void checkForUserContinue() {
+    public void checkForUserContinue(String message) {
         boolean validChoice = true;
         do {
-            //System.out.println("\nWould you like to go again? (y/n)");
+            System.out.println(message);
             if (input.hasNextLine()) {
                 String answer = input.next();
                 validChoice = checkForValidChoice(answer);

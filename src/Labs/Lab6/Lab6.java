@@ -23,7 +23,7 @@ public class Lab6 {
             String userSentence = input.nextLine();
             PigLatinConverter pigLatinConverter = new PigLatinConverter(userSentence);
             System.out.println(pigLatinConverter.convertToPigLatin());
-            inputValidator.checkForUserContinue();
+            inputValidator.checkForUserContinue("\nWould you like to go again? (y/n)");
         }while (inputValidator.isUserCont());
         System.out.println("Goodbye!");
     }

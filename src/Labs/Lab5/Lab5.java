@@ -28,7 +28,7 @@ public class Lab5 {
                 int[] results = rollAllDice(numDice, numSides);
                 printResults(results);
             }
-            inputValidator.checkForUserContinue();
+            inputValidator.checkForUserContinue("\nWould you like to go again? (y/n)");
         } while (inputValidator.isUserCont());
     }
 

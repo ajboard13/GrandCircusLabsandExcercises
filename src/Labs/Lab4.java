@@ -13,7 +13,7 @@ public class Lab4 {
         System.out.println("Welcome to the Factorial Calculator!\n");
         do {
             runFactorialCalculator();
-            inputValidator.checkForUserContinue();
+            inputValidator.checkForUserContinue("\nWould you like to go again? (y/n)");
         } while (inputValidator.isUserCont());
         System.out.println("Goodbye!");
     }
