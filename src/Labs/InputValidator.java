@@ -12,7 +12,7 @@ public class InputValidator {
             System.out.print("\nEnter an integer that's greater than "+minNum+" but less than "+maxNum+": ");
             getValidInt();
             checkForIntBetweenTwoNumbers(minNum, maxNum);
-        } while (userInt <= minNum && userInt < maxNum);
+        } while (userInt < minNum && userInt < maxNum);
         return userInt;
     }
 
@@ -35,7 +35,7 @@ public class InputValidator {
     }
 
     private void checkForIntBetweenTwoNumbers(int minNumber, int maxNumber) {
-        while (userInt <= minNumber || userInt > maxNumber) {
+        while (userInt < minNumber || userInt > maxNumber) {
             System.out.println("Not between "+ minNumber+" and "+maxNumber+"! Please enter an integer: ");
             getValidInt();
         }
@@ -44,7 +44,7 @@ public class InputValidator {
     public void checkForUserContinue() {
         boolean validChoice = true;
         do {
-            System.out.println("\nWould you like to go again? (y/n)");
+            //System.out.println("\nWould you like to go again? (y/n)");
             if (input.hasNextLine()) {
                 String answer = input.next();
                 validChoice = checkForValidChoice(answer);
@@ -62,6 +62,21 @@ public class InputValidator {
             validChoice = true;
         } else {
             System.out.print("\nnot a valid choice! please enter y or n: ");
+            validChoice = false;
+        }
+        return validChoice;
+    }
+
+    public boolean checkForValidChoice(String answer, String choice1, String choice2){
+        boolean validChoice;
+        if (answer.equalsIgnoreCase(choice1)) {
+            userCont = true;
+            validChoice = true;
+        } else if (answer.equalsIgnoreCase(choice2)) {
+            userCont = false;
+            validChoice = true;
+        } else {
+            System.out.print("\nnot a valid choice! please enter \""+choice1+"\" or \""+choice2+"\": ");
             validChoice = false;
         }
         return validChoice;
