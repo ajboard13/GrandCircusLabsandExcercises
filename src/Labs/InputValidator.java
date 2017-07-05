@@ -61,7 +61,7 @@ public class InputValidator {
             userCont = false;
             validChoice = true;
         } else {
-            System.out.print("\nnot a valid choice! please enter y or n: ");
+            System.out.print("\nnot a valid choice! ");
             validChoice = false;
         }
         return validChoice;

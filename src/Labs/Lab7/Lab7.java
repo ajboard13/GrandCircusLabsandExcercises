@@ -20,12 +20,19 @@ public class Lab7 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int studentSelected;
+        int studentSelected = -1;
+        boolean studentIsSelected = true;
 
         System.out.println("Welcome to our Java class!");
         do {
-            System.out.println("Which student would you like to learn more about? ");
-            studentSelected = inputValidator.getValidIntBetweenTwoNumbers(1, 20)-1;
+            if (studentSelected != -1){
+                inputValidator.checkForUserContinue("Do you want to select a new student? (y/n)");
+                studentIsSelected = inputValidator.isUserCont();
+            }
+            if (studentIsSelected) {
+                System.out.println("Which student would you like to learn more about? ");
+                studentSelected = inputValidator.getValidIntBetweenTwoNumbers(1, 20) - 1;
+            }
 
             String fullName = studentTable[studentSelected][0] + " " + studentTable[studentSelected][1];
             String firstName = studentTable[studentSelected][0];
@@ -36,7 +43,7 @@ public class Lab7 {
                     firstName);
             int infoRequested = getInformationRequested();
             System.out.println(getInformationMessage(infoRequested, studentSelected, firstName));
-            inputValidator.checkForUserContinue("");
+            inputValidator.checkForUserContinue("would you like to know more?(y or n): ");
         }while (inputValidator.isUserCont());
         System.out.println("Goodbye!");
     }
@@ -61,9 +68,9 @@ public class Lab7 {
         String infoMessage = null;
         String info = studentTable[studentSelected][infoRequested];
         if (infoRequested == 3){
-            infoMessage = firstName+" is from "+info+". would you like to know more?(y or n): ";
+            infoMessage = firstName+" is from "+info+".";
         }else if (infoRequested == 2){
-            infoMessage = firstName+"'s favorite food is "+info+ ". would you like to know more?(y or n): ";
+            infoMessage = firstName+"'s favorite food is "+info+ ".";
         }
         return infoMessage;
     }
