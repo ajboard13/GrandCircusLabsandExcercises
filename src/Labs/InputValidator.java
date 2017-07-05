@@ -9,7 +9,7 @@ public class InputValidator {
 
     public int getValidIntBetweenTwoNumbers(int minNum, int maxNum) {
         do {
-            System.out.print("\nEnter an integer that's greater than "+minNum+" but less than "+maxNum+": ");
+            //System.out.print("\nEnter an integer that's greater than "+minNum+" but less than "+maxNum+": ");
             getValidInt();
             checkForIntBetweenTwoNumbers(minNum, maxNum);
         } while (userInt < minNum && userInt < maxNum);
