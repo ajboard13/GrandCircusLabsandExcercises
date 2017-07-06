@@ -21,7 +21,7 @@ public class Student implements Comparable<Student> {
         this.score = score;
     }
 
-    public void setSortByScore(boolean sortByScore) {
+    void setSortByScore(boolean sortByScore) {
         this.sortByScore = sortByScore;
     }
 
