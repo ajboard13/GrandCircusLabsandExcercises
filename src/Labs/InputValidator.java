@@ -93,6 +93,7 @@ public class InputValidator {
             } else {
                 System.out.print("\nnot a valid choice! please enter \"" + choice1 + "\" or \"" + choice2 + "\": ");
                 validChoice = false;
+                answer = input.nextLine();
             }
         }while (!validChoice);
         return userCont;
