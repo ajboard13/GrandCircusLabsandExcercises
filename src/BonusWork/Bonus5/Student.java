@@ -30,15 +30,15 @@ public class Student implements Comparable<Student> {
         return lastName+ ", "+ firstName+": "+score;
     }
 
-    private String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    private String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    private int getScore() {
+    public int getScore() {
         return score;
     }
 

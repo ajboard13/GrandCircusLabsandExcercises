@@ -2,53 +2,14 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BonusWork.Bonus5.Bonus5Gui">
   <grid id="27dc6" binding="base" layout-manager="GridBagLayout">
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="668" height="514"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <hspacer id="6e818">
-        <constraints>
-          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-      </hspacer>
-      <vspacer id="dbd2b">
-        <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-      </vspacer>
-      <component id="8c643" class="javax.swing.JLabel" binding="lastNameLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="Last Name: "/>
-        </properties>
-      </component>
-      <component id="c2a34" class="javax.swing.JLabel" binding="firstNameLabel">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="First Name: "/>
-        </properties>
-      </component>
-      <component id="ac6bd" class="javax.swing.JLabel" binding="testScoreLabel">
-        <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <text value="Test Score: "/>
-        </properties>
-      </component>
       <component id="11b24" class="javax.swing.JTextField" binding="lastNameEditText">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <gridbag weightx="0.0" weighty="0.0"/>
@@ -60,49 +21,99 @@
       </component>
       <component id="7584f" class="javax.swing.JTextField" binding="firstNameEditText">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <enabled value="false"/>
-          <text value="Enter a student's last name"/>
+          <text value="Enter a student's first name"/>
         </properties>
       </component>
       <component id="ce5b8" class="javax.swing.JSlider" binding="testScoreSlider">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
-        <properties/>
+        <properties>
+          <majorTickSpacing value="25"/>
+          <minorTickSpacing value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="true"/>
+          <snapToTicks value="true"/>
+        </properties>
       </component>
       <component id="73cbc" class="javax.swing.JButton" binding="addStudentButton">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.2"/>
         </constraints>
         <properties>
           <horizontalTextPosition value="0"/>
           <text value="Add Student"/>
         </properties>
       </component>
-      <component id="f90d3" class="javax.swing.JList" binding="studentListDisplay">
+      <component id="8c643" class="javax.swing.JLabel" binding="lastNameLabel">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
-          </grid>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.25"/>
         </constraints>
-        <properties/>
+        <properties>
+          <labelFor value="11b24"/>
+          <text value="Last Name: "/>
+        </properties>
+      </component>
+      <component id="c2a34" class="javax.swing.JLabel" binding="firstNameLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <labelFor value="7584f"/>
+          <text value="First Name: "/>
+        </properties>
+      </component>
+      <component id="ac6bd" class="javax.swing.JLabel" binding="testScoreLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.25"/>
+        </constraints>
+        <properties>
+          <text value="Test Score: "/>
+        </properties>
       </component>
       <component id="6b8f5" class="javax.swing.JButton" binding="clearStudentsButton">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.8" weighty="0.2"/>
         </constraints>
         <properties>
           <text value="Clear Students"/>
+        </properties>
+      </component>
+      <scrollpane id="b13a6" binding="listViewScrollPane">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f90d3" class="javax.swing.JList" binding="studentListDisplay" custom-create="true">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="454fd" class="javax.swing.JLabel" binding="titleLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Gill Sans Ultra Bold" size="24" style="1"/>
+          <text value="Student Scores Application"/>
         </properties>
       </component>
     </children>

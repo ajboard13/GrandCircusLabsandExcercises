@@ -16,6 +16,8 @@ public class Bonus5Gui {
     private JButton addStudentButton;
     private JList studentListDisplay;
     private JButton clearStudentsButton;
+    private JScrollPane listViewScrollPane;
+    private JLabel titleLabel;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Bonus5Gui");
@@ -23,5 +25,22 @@ public class Bonus5Gui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+
+        studentListDisplay = new JList();
+        DefaultListModel model = new DefaultListModel();
+        model.addElement(new Student("Aaron", "Board", 96));
+        model.addElement(new Student("Aaron", "Board", 96));
+        model.addElement(new Student("Aaron", "Board", 96));
+        model.addElement(new Student("Aaron", "Board", 96));
+        model.addElement(new Student("Aaron", "Board", 96));
+        model.addElement(new Student("Aaron", "Board", 96));
+        ListCellRenderer myListRenderer = new myListCellRenderer();
+        studentListDisplay.setCellRenderer(myListRenderer);
+        studentListDisplay.setModel(model);
+
     }
 }
