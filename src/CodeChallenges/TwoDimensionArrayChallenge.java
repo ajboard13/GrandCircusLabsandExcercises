@@ -31,8 +31,8 @@ public class TwoDimensionArrayChallenge {
         int sumOfHourGlass = 0;
         for (int i = 0; i < tableOfNumbers.length; i++) {
             for (int j = 0; j < tableOfNumbers.length; j++) {
-                if (i ==1){
-                    if(j==1){
+                if (i == Math.floor(tableOfNumbers.length/2) || i == Math.ceil(tableOfNumbers.length/2)){
+                    if(j != (tableOfNumbers.length-1) && j != 0){
                         sumOfHourGlass += tableOfNumbers[i][j];
                     }
                 }else {
