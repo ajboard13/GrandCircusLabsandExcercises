@@ -2,8 +2,6 @@ package CodeChallenges;
 
 import Labs.InputValidator;
 
-import java.util.Scanner;
-
 /*
 Aaron Board && Vernon Scott
 
@@ -18,11 +16,14 @@ public class TwoDimensionArrayChallenge {
     private static InputValidator inputValidator = new InputValidator();
     public static void main(String[] args) {
 
-        System.out.println("Please enter 9 integers, one at a time: ");
-        populateArray();
-        int sumOfHourGlass = SumHourGlass();
-        printTable();
-        System.out.println("\nSum of the hour glass: "+sumOfHourGlass);
+        do {
+            System.out.println("Please enter 9 integers, one at a time: ");
+            populateArray();
+            int sumOfHourGlass = SumHourGlass();
+            printTable();
+            System.out.println("\nSum of the hour glass: " + sumOfHourGlass);
+            inputValidator.checkForUserContinue("Would you like to continue? (y/n) ");
+        }while (inputValidator.isUserCont());
 
     }
 
@@ -31,7 +32,7 @@ public class TwoDimensionArrayChallenge {
         for (int i = 0; i < tableOfNumbers.length; i++) {
             for (int j = 0; j < tableOfNumbers.length; j++) {
                 if (i ==1){
-                    if(j==1 ){
+                    if(j==1){
                         sumOfHourGlass += tableOfNumbers[i][j];
                     }
                 }else {
@@ -53,10 +54,10 @@ public class TwoDimensionArrayChallenge {
 
     private static void printTable (){
         System.out.println("Your Table: ");
-        for (int i = 0; i <tableOfNumbers.length ; i++) {
+        for (int[] row : tableOfNumbers) {
             System.out.println("");
-            for (int j = 0; j <tableOfNumbers.length ; j++) {
-                System.out.print(tableOfNumbers[i][j]+"\t");
+            for (int j = 0; j < tableOfNumbers.length; j++) {
+                System.out.print(row[j] + "\t");
 
             }
             System.out.println("");
