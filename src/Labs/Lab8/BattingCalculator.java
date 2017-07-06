@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 class BattingCalculator {
     private static InputValidator inputValidator = new InputValidator();
     private static int[][] playerResultsTable;
+
     static void runBattingCalculator(){
         do {
             getNumBatters();
@@ -42,6 +43,7 @@ class BattingCalculator {
             System.out.printf("\nBatter %d average: %.3f\t\tslugging percentage: %.3f", aPlayerResultsTable[0], battingAverage, sluggingPercentage);
         }
     }
+
 
     private static double calculateBattingAverage(double onBaseHits, double atBats) {
         double result;
