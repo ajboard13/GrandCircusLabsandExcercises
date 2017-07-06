@@ -17,15 +17,29 @@ public class InputValidator {
     }
 
     public int getValidInt() {
-//        while (!input.hasNextInt()) {
-//            input.nextLine();
-//            System.out.println("not an integer! Please enter an integer: ");
-//        }
         boolean validInt = false;
         do {
             if (input.hasNextInt()) {
                 userInt = input.nextInt();
                 validInt = true;
+            } else {
+                System.out.println("not an integer! Please enter an integer: ");
+            }
+            input.nextLine();
+        }while (!validInt);
+        return userInt;
+    }
+
+    public int getValidPositiveInt() {
+        boolean validInt = false;
+        do {
+            if (input.hasNextInt()) {
+                userInt = input.nextInt();
+                validInt = true;
+                if(userInt < 0){
+                    System.out.println("Not a positive integer! Please enter a positive integer: ");
+                    validInt = false;
+                }
             } else {
                 System.out.println("not an integer! Please enter an integer: ");
             }
@@ -69,17 +83,34 @@ public class InputValidator {
 
     public boolean checkForValidChoice(String answer, String choice1, String choice2){
         boolean validChoice;
-        if (answer.equalsIgnoreCase(choice1)) {
-            userCont = true;
-            validChoice = true;
-        } else if (answer.equalsIgnoreCase(choice2)) {
-            userCont = false;
-            validChoice = true;
-        } else {
-            System.out.print("\nnot a valid choice! please enter \""+choice1+"\" or \""+choice2+"\": ");
-            validChoice = false;
-        }
-        return validChoice;
+        do {
+            if (answer.equalsIgnoreCase(choice1)) {
+                userCont = true;
+                validChoice = true;
+            } else if (answer.equalsIgnoreCase(choice2)) {
+                userCont = false;
+                validChoice = true;
+            } else {
+                System.out.print("\nnot a valid choice! please enter \"" + choice1 + "\" or \"" + choice2 + "\": ");
+                validChoice = false;
+            }
+        }while (!validChoice);
+        return userCont;
+    }
+
+    public String getNonEmptyString(String prompt){
+        String userInput;
+        boolean validInput;
+        do{
+            userInput = input.nextLine();
+            if (userInput.isEmpty()){
+                System.out.println(prompt);
+                validInput = false;
+            }else {
+                validInput = true;
+            }
+        }while (!validInput);
+        return userInput;
     }
 
     public boolean isUserCont() {
