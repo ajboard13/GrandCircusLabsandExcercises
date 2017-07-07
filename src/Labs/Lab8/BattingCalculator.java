@@ -20,7 +20,7 @@ class BattingCalculator {
 
     private static void getNumBatters(){
         System.out.println("How many batters are there?");
-        int numBatters = inputValidator.getValidInt();
+        int numBatters = inputValidator.getValidPositiveInt();
         playerResultsTable =  new int [numBatters][4];
     }
 
@@ -67,7 +67,7 @@ class BattingCalculator {
 
     private static int getNumberOfAtBats(int i){
         System.out.println("\nHow many at bats did player "+(i+1)+" have?");
-        return inputValidator.getValidInt();
+        return inputValidator.getValidPositiveInt();
     }
 
     private static int sumTotalNumberOfBases(int atBats, int j){
