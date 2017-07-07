@@ -4,8 +4,8 @@ package BonusWork.Bonus8;
 code snippet from
 https://github.com/grandcircusco/Java_Bootcamp/blob/master/MovieIO.java
  */
-public class MovieIO {
-    public static enum Categories{
+class MovieIO {
+    public enum Categories{
         SCIFI,
         DRAMA,
         MUSICAL,
@@ -14,7 +14,7 @@ public class MovieIO {
         ANIMATED,
         DNE
     }
-    public static Movie getMovie(int index) {
+    static Movie getMovie(int index) {
         switch (index) {
             case 1:
                 return new Movie("Citizen Kane", Categories.DRAMA);
