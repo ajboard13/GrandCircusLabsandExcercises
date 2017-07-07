@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/Bonus5/Bonus5Gui.form" afterPath="$PROJECT_DIR$/src/BonusWork/Bonus5/Bonus5Gui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/Bonus5/Bonus5Gui.java" afterPath="$PROJECT_DIR$/src/BonusWork/Bonus5/Bonus5Gui.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1037,7 +1036,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144778000" />
+    <option name="totallyTimeSpent" value="144885000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

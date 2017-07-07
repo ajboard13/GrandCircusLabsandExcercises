@@ -106,16 +106,6 @@
           </component>
         </children>
       </scrollpane>
-      <component id="454fd" class="javax.swing.JLabel" binding="titleLabel">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
-        </constraints>
-        <properties>
-          <font name="Gill Sans Ultra Bold" size="24" style="1"/>
-          <text value="Student Scores Application"/>
-        </properties>
-      </component>
       <component id="ece87" class="javax.swing.JButton" binding="sortByScoreButton" custom-create="true" default-binding="true">
         <constraints>
           <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -132,6 +122,16 @@
         </constraints>
         <properties>
           <text value="Sort By Name"/>
+        </properties>
+      </component>
+      <component id="454fd" class="javax.swing.JLabel" binding="titleLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Gill Sans Ultra Bold" size="24" style="1"/>
+          <text value="Student Scores Application"/>
         </properties>
       </component>
     </children>
