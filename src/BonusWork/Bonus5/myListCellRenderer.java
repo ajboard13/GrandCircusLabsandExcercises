@@ -9,7 +9,7 @@ import java.awt.*;
 public class myListCellRenderer extends JLabel implements ListCellRenderer<Student> {
     @Override
     public Component getListCellRendererComponent(JList list, Student student, int index, boolean isSelected, boolean cellHasFocus) {
-        String fullName = student.getFirstName() + " " + student.getLastName();
+        String fullName = student.getLastName() + ", " + student.getFirstName();
         int testScore = student.getScore();
         String cellHtml = "<html><ul style =\"list-style-type: none;\">\n" +
                             "<li><h3>" +fullName+"</h3>\n" +"<p><strong>Test Score: </strong>" +testScore+ "</li>\n" +"</ul></html>";

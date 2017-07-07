@@ -94,7 +94,7 @@
       </component>
       <scrollpane id="b13a6" binding="listViewScrollPane">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.5" weighty="0.5"/>
         </constraints>
         <properties/>
