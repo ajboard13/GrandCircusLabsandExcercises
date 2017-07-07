@@ -7,15 +7,19 @@ Aaron Board
  */
 public class Movie {
     private String title;
-    private String category;
+    private MovieIO.Categories category;
 
-    Movie(String title, String category) {
+    Movie(String title, MovieIO.Categories category) {
         this.title = title;
         this.category = category;
     }
 
+    MovieIO.Categories getCategory() {
+        return category;
+    }
+
     @Override
     public String toString() {
-        return "\nTitle: "+ title+ "\tCategory: "+category;
+        return String.format("%-48s%-48s", ("Movie Title: "+title), ("Category: "+category));
     }
 }
