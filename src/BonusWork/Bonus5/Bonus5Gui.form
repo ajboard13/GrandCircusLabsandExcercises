@@ -7,7 +7,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="11b24" class="javax.swing.JTextField" binding="lastNameEditText">
+      <component id="11b24" class="javax.swing.JTextField" binding="lastNameEditText" custom-create="true">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -15,11 +15,11 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <enabled value="false"/>
-          <text value="Enter a student's last name"/>
+          <enabled value="true"/>
+          <text value=""/>
         </properties>
       </component>
-      <component id="7584f" class="javax.swing.JTextField" binding="firstNameEditText">
+      <component id="7584f" class="javax.swing.JTextField" binding="firstNameEditText" custom-create="true">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -27,8 +27,8 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <enabled value="false"/>
-          <text value="Enter a student's first name"/>
+          <enabled value="true"/>
+          <text value=""/>
         </properties>
       </component>
       <component id="ce5b8" class="javax.swing.JSlider" binding="testScoreSlider">
@@ -44,7 +44,7 @@
           <snapToTicks value="true"/>
         </properties>
       </component>
-      <component id="73cbc" class="javax.swing.JButton" binding="addStudentButton">
+      <component id="73cbc" class="javax.swing.JButton" binding="addStudentButton" custom-create="true">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.2"/>
@@ -83,7 +83,7 @@
           <text value="Test Score: "/>
         </properties>
       </component>
-      <component id="6b8f5" class="javax.swing.JButton" binding="clearStudentsButton">
+      <component id="6b8f5" class="javax.swing.JButton" binding="clearStudentsButton" custom-create="true">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.8" weighty="0.2"/>

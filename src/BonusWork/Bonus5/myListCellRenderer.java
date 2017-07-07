@@ -1,7 +1,6 @@
 package BonusWork.Bonus5;
 
 import javax.swing.*;
-import javax.swing.plaf.IconUIResource;
 import java.awt.*;
 
 /**
@@ -15,7 +14,8 @@ public class myListCellRenderer extends JLabel implements ListCellRenderer<Stude
         String cellHtml = "<html><ul style =\"list-style-type: none;\">\n" +
                             "<li><h3>" +fullName+"</h3>\n" +"<p><strong>Test Score: </strong>" +testScore+ "</li>\n" +"</ul></html>";
         setText(cellHtml);
-        Icon profilePic = new ImageIcon("C:\\Users\\user\\IdeaProjects\\GrandCircusWork\\img\\emptyProfile.jpg");
+        ImageIcon profilePic = new ImageIcon("C:\\Users\\user\\IdeaProjects\\GrandCircusWork\\img\\emptyProfile.jpg");
+        profilePic = new ImageIcon(profilePic.getImage().getScaledInstance(75,75,Image.SCALE_SMOOTH));
         setIcon(profilePic);
 
         return this;

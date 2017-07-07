@@ -105,4 +105,7 @@ public class Bonus5 {
         return inputValidator.checkForValidChoice(input.nextLine(), "y", "n");
     }
 
+    static ArrayList<Student> getStudentList() {
+        return studentList;
+    }
 }
