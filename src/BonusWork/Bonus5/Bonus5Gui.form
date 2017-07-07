@@ -116,6 +116,24 @@
           <text value="Student Scores Application"/>
         </properties>
       </component>
+      <component id="ece87" class="javax.swing.JButton" binding="sortByScoreButton" custom-create="true" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Sort By Score"/>
+        </properties>
+      </component>
+      <component id="50311" class="javax.swing.JButton" binding="sortByNameButton" custom-create="true" default-binding="true">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Sort By Name"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

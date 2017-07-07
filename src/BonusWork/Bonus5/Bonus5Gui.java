@@ -1,6 +1,11 @@
 package BonusWork.Bonus5;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.*;
+
+import static javafx.scene.input.KeyCode.T;
 
 /*
 Aaron Board
@@ -20,6 +25,9 @@ public class Bonus5Gui {
     private JButton clearStudentsButton;
     private JScrollPane listViewScrollPane;
     private JLabel titleLabel;
+    private JButton sortByScoreButton;
+    private JButton sortByNameButton;
+    private static ArrayList<Student> studentList = new ArrayList<>();
 
     private static JFrame frame = new JFrame("Bonus5Gui");
 
@@ -37,13 +45,12 @@ public class Bonus5Gui {
         testScoreSlider = new JSlider();
         addStudentButton = new JButton();
         clearStudentsButton = new JButton();
-
-        lastNameEditText.setEnabled(true);
-        firstNameEditText.setEnabled(true);
+        sortByNameButton = new JButton();
+        sortByScoreButton = new JButton();
         studentListDisplay = new JList();
 
 
-        DefaultListModel model = new DefaultListModel();
+        DefaultListModel<Student> model = new DefaultListModel();
         ListCellRenderer myListRenderer = new myListCellRenderer();
         studentListDisplay.setCellRenderer(myListRenderer);
         studentListDisplay.setModel(model);
@@ -58,6 +65,42 @@ public class Bonus5Gui {
             studentListDisplay.updateUI();
         });
 
+        sortByScoreButton.addActionListener(e -> {
+            sortByScore(model);
+            studentListDisplay.updateUI();
+        });
+
+        sortByNameButton.addActionListener(e -> {
+            sortByName(model);
+            studentListDisplay.updateUI();
+        });
+
+    }
+
+    private void sortByName(DefaultListModel model) {
+        model.removeAllElements();
+        studentList.removeIf(Objects::isNull);
+        for (Student student: studentList) {
+            student.setSortByScore(false);
+        }
+        Collections.sort(studentList);
+        for (Student student: studentList){
+            model.addElement(student);
+        }
+        studentListDisplay.updateUI();
+    }
+
+    private void sortByScore(DefaultListModel model) {
+        model.removeAllElements();
+        studentList.removeIf(Objects::isNull);
+        for (Student student: studentList) {
+            student.setSortByScore(true);
+        }
+        Collections.sort(studentList);
+        for (Student student: studentList){
+            model.addElement(student);
+        }
+        studentListDisplay.updateUI();
     }
 
     private void addStudent(DefaultListModel model){
@@ -65,11 +108,13 @@ public class Bonus5Gui {
             JOptionPane.showMessageDialog(frame, "Please enter a valid name!");
         }else {
             model.addElement(new Student(firstNameEditText.getText(), lastNameEditText.getText(), testScoreSlider.getValue()));
+            studentList.add(new Student(firstNameEditText.getText(), lastNameEditText.getText(), testScoreSlider.getValue()));
         }
     }
 
     private void clearStudents(DefaultListModel model){
         model.removeAllElements();
+        studentList = new ArrayList<>();
     }
 
 }
