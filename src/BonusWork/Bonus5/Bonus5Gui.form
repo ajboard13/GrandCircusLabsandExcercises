@@ -37,7 +37,7 @@
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
-          <majorTickSpacing value="25"/>
+          <majorTickSpacing value="10"/>
           <minorTickSpacing value="1"/>
           <paintLabels value="true"/>
           <paintTicks value="true"/>
@@ -47,7 +47,7 @@
       <component id="73cbc" class="javax.swing.JButton" binding="addStudentButton" custom-create="true">
         <constraints>
           <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.2"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <horizontalTextPosition value="0"/>
@@ -57,7 +57,7 @@
       <component id="8c643" class="javax.swing.JLabel" binding="lastNameLabel">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.25"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <labelFor value="11b24"/>
@@ -67,7 +67,7 @@
       <component id="c2a34" class="javax.swing.JLabel" binding="firstNameLabel">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.25"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <labelFor value="7584f"/>
@@ -77,7 +77,7 @@
       <component id="ac6bd" class="javax.swing.JLabel" binding="testScoreLabel">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.25"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
           <text value="Test Score: "/>
@@ -86,7 +86,7 @@
       <component id="6b8f5" class="javax.swing.JButton" binding="clearStudentsButton" custom-create="true">
         <constraints>
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.8" weighty="0.2"/>
+          <gridbag weightx="0.8" weighty="0.0"/>
         </constraints>
         <properties>
           <text value="Clear Students"/>
@@ -95,7 +95,7 @@
       <scrollpane id="b13a6" binding="listViewScrollPane">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-          <gridbag weightx="0.0" weighty="0.0"/>
+          <gridbag weightx="0.5" weighty="0.5"/>
         </constraints>
         <properties/>
         <border type="none"/>
