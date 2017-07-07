@@ -11,6 +11,7 @@ class MovieListApp {
 
     static void runMovieListApp() {
         ArrayList<Movie> movies = populateArrayOfMovies();
+        Collections.sort(movies);
         do {
             System.out.printf("There are %d movies in the list\n", movies.size());
             int movieCat = selectCategory() - 1;
@@ -34,14 +35,16 @@ class MovieListApp {
             if (movieCat == movie.getCategory().ordinal()) {
                 selectedMovies.add(movie);
             }
+            if (movieCat == 6){
+                selectedMovies.add(movie);
+            }
         }
-        Collections.sort(selectedMovies);
         return selectedMovies;
     }
 
     private static int selectCategory() {
-        System.out.println("What category are you interested in?\n1 for SciFi\n2 for Drama\n3 for Musical\n4 for Comedy\n5 for Horror\n6 for Animated");
-        return inputValidator.getValidIntBetweenTwoNumbers(1, 6);
+        System.out.println("What category are you interested in?\n1 for SciFi\n2 for Drama\n3 for Musical\n4 for Comedy\n5 for Horror\n6 for Animated\n7 to show all movies");
+        return inputValidator.getValidIntBetweenTwoNumbers(1, 7);
     }
 
     private static ArrayList<Movie> populateArrayOfMovies() {
