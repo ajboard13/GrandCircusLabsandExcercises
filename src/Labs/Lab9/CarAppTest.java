@@ -5,9 +5,9 @@ Aaron Board
 
 7/7/2017
  */
-public class Lab9 {
+public class CarAppTest {
     public static void main(String[] args) {
-        Car car = new Car();
-        System.out.println(car);
+        CarApp carApp = new CarApp();
+        carApp.runCarApp();
     }
 }

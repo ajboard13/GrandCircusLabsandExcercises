@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class InputValidator {
     private boolean userCont;
     private int userInt;
+    private double userDouble;
     private Scanner input = new Scanner(System.in);
 
     public int getValidIntBetweenTwoNumbers(int minNum, int maxNum) {
@@ -28,6 +29,20 @@ public class InputValidator {
             input.nextLine();
         }while (!validInt);
         return userInt;
+    }
+
+    public double getValidDouble(String errorMessage){
+        boolean validInt = false;
+        do {
+            if (input.hasNextInt() || input.hasNextDouble()) {
+                userDouble = input.nextDouble();
+                validInt = true;
+            } else {
+                System.out.println(errorMessage);
+            }
+            input.nextLine();
+        }while (!validInt);
+        return userDouble;
     }
 
     public int getValidPositiveInt() {

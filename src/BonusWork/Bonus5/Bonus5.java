@@ -104,8 +104,4 @@ public class Bonus5 {
         System.out.println("Would you like to keep the same list? (y/n)");
         return inputValidator.checkForValidChoice(input.nextLine(), "y", "n");
     }
-
-    static ArrayList<Student> getStudentList() {
-        return studentList;
-    }
 }
