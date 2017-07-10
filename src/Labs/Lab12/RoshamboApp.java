@@ -2,8 +2,6 @@ package Labs.Lab12;
 
 import Labs.InputValidator;
 
-import java.util.Scanner;
-
 /*
 Aaron Board
 
@@ -11,17 +9,75 @@ Aaron Board
  */
 public class RoshamboApp {
     private static InputValidator inputValidator = new InputValidator();
+    private static int playerWins;
+    private static int opponentWins;
 
     public static void main(String[] args) {
 
+        System.out.println("Welcome to Rock Paper Scissors!");
+        runRockPaperScissors();
+        System.out.println("Goodbye!");
+    }
+
+    private static void runRockPaperScissors(){
         String userName = getUserName();
-        Player opponent = chooseOpponent();
-        int userChoice = getUserChoice() - 1;
-        Human player = new Human(userName, userChoice);
+        do {
+            Player opponent = chooseOpponent();
+            int userChoice = getUserChoice() - 1;
+            Human player = new Human(userName, userChoice);
+            Roshambo playerResult = player.generateRoshambo();
+            Roshambo opponentResult = opponent.generateRoshambo();
+            System.out.printf("%s: %s\n%s: %s", player.getName(), playerResult, opponent.getName(), opponentResult);
+            compareResults(playerResult, opponentResult, player.getName(), opponent.getName());
+            printTotalWins(player.getName(), opponent.getName());
+            inputValidator.checkForUserContinue("\n\nPlay again? (y/n): ");
+        }while (inputValidator.isUserCont());
+    }
 
-        System.out.println(player.generateRoshambo());
-        System.out.println(opponent.generateRoshambo());
+    private static void compareResults(Roshambo playerResult, Roshambo opponentResult, String playerName, String opponentName) {
+        System.out.println();
+        String winner = "Everybody";
+        if (playerResult == opponentResult){
+            System.out.println("Draw!");
+        }
+        if (playerResult == Roshambo.ROCK){
+            if (opponentResult == Roshambo.SCISSORS){
+                winner = playerName;
+            }
+            if (opponentResult == Roshambo.PAPER){
+                winner = opponentName;
+            }
+        }
+        if (playerResult == Roshambo.PAPER){
+            if (opponentResult == Roshambo.SCISSORS){
+                winner = opponentName;
+            }
+            if (opponentResult == Roshambo.ROCK){
+                winner = playerName;
+            }
+        }
+        if (playerResult == Roshambo.SCISSORS){
+            if (opponentResult == Roshambo.PAPER){
+                winner = playerName;
+            }
+            if(opponentResult== Roshambo.ROCK){
+                winner = opponentName;
+            }
+        }
+        if (winner.equalsIgnoreCase(opponentName)){
+            opponentWins++;
+        }else if (winner.equalsIgnoreCase(playerName)) {
+            playerWins++;
+        }
+        printWinner(winner);
+    }
 
+    private static void printTotalWins(String playerName, String opponentName){
+        System.out.printf("\n\nTOTAL WINS:\n%s: %d\n%s: %d", playerName, playerWins, opponentName, opponentWins);
+    }
+
+    private static void printWinner(String winner){
+        System.out.printf("%s wins!",winner);
     }
 
     private static Player chooseOpponent() {

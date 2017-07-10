@@ -17,9 +17,6 @@ public class Human extends Player{
         this.choice = choice;
     }
 
-    public String getName(){
-        return super.name;
-    }
 
     @Override
     Roshambo generateRoshambo() {

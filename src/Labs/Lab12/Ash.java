@@ -10,9 +10,6 @@ class Ash extends Player{
         super(name);
     }
 
-    String getName(){
-        return super.name;
-    }
 
     @Override
     Roshambo generateRoshambo() {

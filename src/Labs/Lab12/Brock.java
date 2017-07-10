@@ -11,10 +11,6 @@ class Brock extends Player{
     }
 
 
-    String getName(){
-        return super.name;
-    }
-
     @Override
     Roshambo generateRoshambo() {
         return Roshambo.ROCK;
