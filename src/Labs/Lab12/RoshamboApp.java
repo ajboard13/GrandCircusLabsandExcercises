@@ -11,6 +11,8 @@ public class RoshamboApp {
     private static InputValidator inputValidator = new InputValidator();
     private static int playerWins;
     private static int opponentWins;
+    private static int playerLoses;
+    private static int opponentLoses;
 
     public static void main(String[] args) {
 
@@ -67,14 +69,16 @@ public class RoshamboApp {
         }
         if (winner.equalsIgnoreCase(opponentName)){
             opponentWins++;
+            playerLoses++;
         }else if (winner.equalsIgnoreCase(playerName)) {
             playerWins++;
+            opponentLoses++;
         }
         printWinner(winner);
     }
 
     private static void printTotalWins(String playerName, String opponentName){
-        System.out.printf("\n\nTOTAL WINS:\n%s: %d\n%s: %d", playerName, playerWins, opponentName, opponentWins);
+        System.out.printf("\n\n%32s%32s"+ "\n%-24s %-32d%-32d\n%-24s %-32d%-32d","TOTAL WINS:","TOTAL LOSSES:", playerName, playerWins,playerLoses, opponentName, opponentWins,opponentLoses);
     }
 
     private static void printWinner(String winner){
