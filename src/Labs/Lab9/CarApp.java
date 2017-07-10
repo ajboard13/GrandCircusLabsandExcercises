@@ -1,10 +1,8 @@
 package Labs.Lab9;
 
-import BonusWork.Bonus5.Student;
 import Labs.InputValidator;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 /*
@@ -37,7 +35,7 @@ class CarApp {
         carList = new ArrayList<>(listSize);
     }
 
-    private void askHowManyStudentsToAdd() {
+    private void askHowManyCarsToAdd() {
         System.out.println("How many cars do you wish to add: ");
         listSize += inputValidator.getValidPositiveInt();
     }
@@ -47,7 +45,7 @@ class CarApp {
             if (checkIfUserWantsToKeepList()) {
                 if (checkIfUserWantsToAppendToList()) {
                     startingIndex = carList.size();
-                    askHowManyStudentsToAdd();
+                    askHowManyCarsToAdd();
                 }
                 startingIndex = carList.size();
             } else {
