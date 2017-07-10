@@ -79,6 +79,7 @@ public class InputValidator {
                 validChoice = checkForValidChoice(answer);
             }
         } while (!validChoice);
+        input.nextLine();
     }
 
     private boolean checkForValidChoice(String answer){

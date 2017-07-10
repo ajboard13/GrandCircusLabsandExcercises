@@ -8,9 +8,8 @@ Aaron Board
 public class Human extends Player{
     private int choice;
 
-    public Human(String name, int choice) {
+    public Human(String name) {
         super(name);
-        this.choice = choice;
     }
 
     public void setChoice(int choice){

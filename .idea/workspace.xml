@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab12/Ash.java" afterPath="$PROJECT_DIR$/src/Labs/Lab12/Ash.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab12/Brock.java" afterPath="$PROJECT_DIR$/src/Labs/Lab12/Brock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/InputValidator.java" afterPath="$PROJECT_DIR$/src/Labs/InputValidator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab12/Human.java" afterPath="$PROJECT_DIR$/src/Labs/Lab12/Human.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab12/Player.java" afterPath="$PROJECT_DIR$/src/Labs/Lab12/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab12/RoshamboApp.java" afterPath="$PROJECT_DIR$/src/Labs/Lab12/RoshamboApp.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,8 +64,8 @@
       <file leaf-file-name="InputValidator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/InputValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="116" column="28" lean-forward="false" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+            <state relative-caret-position="373">
+              <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -105,11 +103,13 @@
       <file leaf-file-name="Human.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab12/Human.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
-                <element signature="e#250#251#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#168#169#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,11 +128,11 @@
       <file leaf-file-name="RoshamboApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Labs/Lab12/RoshamboApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+            <state relative-caret-position="92">
+              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding>
-                <element signature="e#2778#2779#0" expanded="true" />
-                <element signature="e#2830#2831#0" expanded="true" />
+                <element signature="e#2804#2805#0" expanded="true" />
+                <element signature="e#2856#2857#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -261,9 +261,9 @@
         <option value="$PROJECT_DIR$/src/Labs/Lab12/Player.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab12/Ash.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab12/Brock.java" />
+        <option value="$PROJECT_DIR$/src/Labs/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab12/Human.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab12/RoshamboApp.java" />
-        <option value="$PROJECT_DIR$/src/Labs/InputValidator.java" />
       </list>
     </option>
   </component>
@@ -970,7 +970,7 @@
       <workItem from="1498574290022" duration="17174000" />
       <workItem from="1498612033870" duration="2668000" />
       <workItem from="1499100245322" duration="11749000" />
-      <workItem from="1499707041625" duration="5005000" />
+      <workItem from="1499707041625" duration="5344000" />
     </task>
     <servers />
   </component>
@@ -992,7 +992,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170300000" />
+    <option name="totallyTimeSpent" value="170639000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1005,7 +1005,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1016,7 +1015,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32491767" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32491767" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1048,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Labs/InputValidator.java</url>
-          <line>104</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
@@ -1387,19 +1386,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/InputValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="116" column="28" lean-forward="false" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+        <state relative-caret-position="373">
+          <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/Lab12/Human.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="147">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1414,11 +1415,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/Lab12/RoshamboApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="87" column="43" lean-forward="false" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        <state relative-caret-position="92">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
-            <element signature="e#2778#2779#0" expanded="true" />
-            <element signature="e#2830#2831#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
           </folding>
         </state>
       </provider>

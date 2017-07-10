@@ -21,10 +21,11 @@ public class RoshamboApp {
 
     private static void runRockPaperScissors(){
         String userName = getUserName();
+        Human player = new Human(userName);
         do {
             Player opponent = chooseOpponent();
             int userChoice = getUserChoice() - 1;
-            Human player = new Human(userName, userChoice);
+            player.setChoice(userChoice);
             Roshambo playerResult = player.generateRoshambo();
             Roshambo opponentResult = opponent.generateRoshambo();
             System.out.printf("%s: %s\n%s: %s", player.getName(), playerResult, opponent.getName(), opponentResult);
