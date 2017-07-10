@@ -5,7 +5,16 @@ Aaron Board
 
 7/10/2017
  */
-public class Brock extends Player{
+class Brock extends Player{
+    Brock(String name) {
+        super(name);
+    }
+
+
+    String getName(){
+        return super.name;
+    }
+
     @Override
     Roshambo generateRoshambo() {
         return Roshambo.ROCK;

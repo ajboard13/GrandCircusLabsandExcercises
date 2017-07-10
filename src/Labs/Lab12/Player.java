@@ -10,4 +10,8 @@ public abstract class Player {
     Roshambo roshambo;
 
     abstract Roshambo generateRoshambo();
+
+    public Player(String name) {
+        this.name = name;
+    }
 }

@@ -5,7 +5,15 @@ Aaron Board
 
 7/10/2017
  */
-public class Ash extends Player{
+class Ash extends Player{
+    Ash(String name) {
+        super(name);
+    }
+
+    String getName(){
+        return super.name;
+    }
+
     @Override
     Roshambo generateRoshambo() {
         int randNum = (int) (Math.random() * 3);
