@@ -13,16 +13,42 @@ class CountryListApp {
     private static ArrayList<String> startingCountries = new ArrayList<>();
     private static InputValidator inputValidator = new InputValidator();
     private static CountriesBinaryFile countriesBinaryFile = new CountriesBinaryFile();
+    private static CountriesTextFile countriesTextFile = new CountriesTextFile();
+    private static boolean isText= false;
     private static boolean userCont = true;
 
     static void runCountryListApp(){
-        initializeCountries();
         System.out.println("Welcome to the Countries Maintenance Application");
+        initializeCountries();
+        checkHowUserWantsToStoreCountries();
+        if (!isText){
+            runBinaryApp();
+        } else {
+            runTextApp();
+        }
+
+        System.out.println("Goodbye!");
+    }
+
+    private static void runBinaryApp() {
         do {
             int userSelect = getUserSelection();
             checkTheUserSelection(userSelect);
         }while (userCont);
-        System.out.println("Goodbye!");
+    }
+
+    private static void runTextApp() {
+
+        do {
+            int userSelect = getUserSelection();
+            checkTheUserSelectionText(userSelect);
+        }while (userCont);
+    }
+
+
+    private static void checkHowUserWantsToStoreCountries() {
+        System.out.println("Would you like to store countries using text or binary? (t/b)");
+        isText = inputValidator.checkForValidChoice(inputValidator.checkForValidChoice("t", "b"), "t", "b");
     }
 
     private static void initializeCountries() {
@@ -30,7 +56,9 @@ class CountryListApp {
         startingCountries.add("Russia");
         startingCountries.add("China");
         countriesBinaryFile.initializeBinaryCountries(startingCountries);
+        countriesTextFile.writeCountriesToFile(startingCountries);
     }
+
 
     private static void checkTheUserSelection(int userSelect) {
         switch (userSelect){
@@ -49,6 +77,45 @@ class CountryListApp {
             default:
                 break;
         }
+    }
+    private static void checkTheUserSelectionText(int userSelect) {
+        switch (userSelect){
+            case 1:
+                countriesTextFile.readCountries();
+                break;
+            case 2:
+                addCountryToListText();
+                break;
+            case 3:
+                deleteCountryText();
+                break;
+            case 4:
+                userCont = false;
+                break;
+            default:
+                break;
+        }
+    }
+
+    private static void deleteCountryText() {
+        System.out.println("Pick a country to delete:");
+        int countryToDeleteIndex;
+        for (int i = 0; i < startingCountries.size(); i++) {
+            System.out.println((i+1) + " for " + startingCountries.get(i));
+        }
+        countryToDeleteIndex = (inputValidator.getValidIntBetweenTwoNumbers(1, startingCountries.size())-1);
+        startingCountries.remove(countryToDeleteIndex);
+        countriesTextFile.writeCountriesToFile(startingCountries);
+        System.out.println("Country Deleted!\n");
+
+    }
+
+    private static void addCountryToListText() {
+        System.out.print("Enter country: ");
+        String country = inputValidator.getNonEmptyString("Not a valid country! \nEnter country: ");
+        startingCountries.add(country);
+        countriesTextFile.addCountry(country);
+        System.out.println("Country added!");
     }
 
     private static void deleteCountry() {
