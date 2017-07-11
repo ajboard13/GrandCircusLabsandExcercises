@@ -35,7 +35,7 @@ class CountryListApp {
     private static void checkTheUserSelection(int userSelect) {
         switch (userSelect){
             case 1:
-                showCountryList();
+                countriesBinaryFile.readBinaryCounties();
                 break;
             case 2:
                 addCountryToList();
@@ -69,10 +69,6 @@ class CountryListApp {
         startingCountries.add(country);
         countriesBinaryFile.addCountry(country);
         System.out.println("Country added!");
-    }
-
-    private static void showCountryList() {
-        countriesBinaryFile.readBinaryCounties();
     }
 
     private static int getUserSelection() {
