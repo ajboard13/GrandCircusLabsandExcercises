@@ -41,11 +41,26 @@ class CountryListApp {
                 addCountryToList();
                 break;
             case 3:
+                deleteCountry();
+                break;
+            case 4:
                 userCont = false;
                 break;
             default:
                 break;
         }
+    }
+
+    private static void deleteCountry() {
+        System.out.println("Pick a country to delete:");
+        int countryToDeleteIndex;
+        for (int i = 0; i < startingCountries.size(); i++) {
+            System.out.println((i+1) + " for " + startingCountries.get(i));
+        }
+        countryToDeleteIndex = (inputValidator.getValidIntBetweenTwoNumbers(1, startingCountries.size())-1);
+        startingCountries.remove(countryToDeleteIndex);
+        countriesBinaryFile.initializeBinaryCountries(startingCountries);
+        System.out.println("Country Deleted!\n");
     }
 
     private static void addCountryToList() {
@@ -61,7 +76,7 @@ class CountryListApp {
     }
 
     private static int getUserSelection() {
-        System.out.print("\n1 - See the list of countries\n2 - Add a country\n3 - Exit\n\nEnter a menu number: \n");
-        return inputValidator.getValidIntBetweenTwoNumbers(1,3);
+        System.out.print("\n1 - See the list of countries\n2 - Add a country\n3 - Delete a country\n4 - Exit\n\nEnter a menu number: \n");
+        return inputValidator.getValidIntBetweenTwoNumbers(1,4);
     }
 }
