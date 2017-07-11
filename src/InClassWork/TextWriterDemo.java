@@ -14,8 +14,8 @@ public class TextWriterDemo {
         try {
 
             //if test.txt file does not exist FileWriter will create it.
-            FileWriter writer = new FileWriter("test.txt");
-            writer.write("Hello World!\n");
+            FileWriter writer = new FileWriter("test.txt", true);
+            writer.write("Hello World2!\n");
             writer.close();
 
 
