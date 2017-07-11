@@ -11,11 +11,38 @@ public class FileIOApp {
     public static void main(String[] args) {
         Car car = new Car();
         car.setMake("Cruze");
-        car.setMileage(75060);
+        car.setMileage(75000);
         System.out.println(car);
+        Car car1 = new Car();
+        car1.setMileage(23000);
+        car1.setMake("Malibu");
 
         //this section is writing to a file
 
+        writeCarToFile(car);
+        writeCarToFile(car1);
+
+
+        //this section is reading from the file
+        readCarFromFile();
+        readCarFromFile();
+
+    }
+
+    private static void readCarFromFile() {
+        try {
+            FileInputStream fileInputStream = new FileInputStream("testWrite.ser");
+
+            ObjectInputStream ois = new ObjectInputStream(fileInputStream);
+
+            System.out.println(ois.readObject());
+            ois.close();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void writeCarToFile(Car car) {
         try {
 
             //FileOutputStream knows how to connect and create a file
@@ -35,18 +62,5 @@ public class FileIOApp {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-        //this section is reading from the file
-        try {
-            FileInputStream fileInputStream = new FileInputStream("testWrite.ser");
-
-            ObjectInputStream ois = new ObjectInputStream(fileInputStream);
-
-            System.out.println(ois.readObject());ois.close();
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
     }
 }
