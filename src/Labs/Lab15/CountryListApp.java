@@ -113,9 +113,13 @@ class CountryListApp {
     private static void addCountryToListText() {
         System.out.print("Enter country: ");
         String country = inputValidator.getNonEmptyString("Not a valid country! \nEnter country: ");
-        startingCountries.add(country);
-        countriesTextFile.addCountry(country);
-        System.out.println("Country added!");
+        if (!inputValidator.checkForDuplicateCountry(country)){
+            startingCountries.add(country);
+            countriesTextFile.addCountry(country);
+            System.out.println("Country added!");
+        } else {
+            System.out.println("Already in list!");
+        }
     }
 
     private static void deleteCountry() {
@@ -133,9 +137,13 @@ class CountryListApp {
     private static void addCountryToList() {
         System.out.print("Enter country: ");
         String country = inputValidator.getNonEmptyString("Not a valid country! \nEnter country: ");
-        startingCountries.add(country);
-        countriesBinaryFile.addCountry(country);
-        System.out.println("Country added!");
+        if (!inputValidator.checkForDuplicateCountry(country)) {
+            startingCountries.add(country);
+            countriesBinaryFile.addCountry(country);
+            System.out.println("Country added!");
+        } else {
+            System.out.println("Already in list!");
+        }
     }
 
     private static int getUserSelection() {

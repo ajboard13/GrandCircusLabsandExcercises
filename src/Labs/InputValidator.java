@@ -1,5 +1,8 @@
 package Labs;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Scanner;
 
 public class InputValidator {
@@ -148,6 +151,22 @@ public class InputValidator {
 
     public boolean isUserCont() {
         return userCont;
+    }
+
+    public boolean checkForDuplicateCountry(String country){
+        String[] countries;
+        boolean isDuplicate = false;
+        try {
+            countries = Files.readAllLines(new File("countries.txt").toPath()).toArray(new String[0]);
+            for (String country1 : countries){
+                if (country1.equalsIgnoreCase(country)){
+                    isDuplicate = true;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return isDuplicate;
     }
 
 }
