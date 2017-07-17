@@ -113,7 +113,7 @@ class CountryListApp {
     private static void addCountryToListText() {
         System.out.print("Enter country: ");
         String country = inputValidator.getNonEmptyString("Not a valid country! \nEnter country: ");
-        if (!inputValidator.checkForDuplicateCountry(country)){
+        if (!inputValidator.checkForDuplicateCountry(country, "countries.txt")){
             startingCountries.add(country);
             countriesTextFile.addCountry(country);
             System.out.println("Country added!");
@@ -137,7 +137,7 @@ class CountryListApp {
     private static void addCountryToList() {
         System.out.print("Enter country: ");
         String country = inputValidator.getNonEmptyString("Not a valid country! \nEnter country: ");
-        if (!inputValidator.checkForDuplicateCountry(country)) {
+        if (!inputValidator.checkForDuplicateCountry(country,  "countries.dat")) {
             startingCountries.add(country);
             countriesBinaryFile.addCountry(country);
             System.out.println("Country added!");
