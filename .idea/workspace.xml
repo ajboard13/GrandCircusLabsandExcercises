@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24df3c1-bf75-4f7e-8fda-7fe4860651b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/InputValidator.class" afterPath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/InputValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/Lab15/CountryListApp.class" afterPath="$PROJECT_DIR$/out/production/GrandCircusWork/Labs/Lab15/CountryListApp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/countries.dat" afterPath="$PROJECT_DIR$/countries.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/InputValidator.java" afterPath="$PROJECT_DIR$/src/Labs/InputValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/Lab15/CountryListApp.java" afterPath="$PROJECT_DIR$/src/Labs/Lab15/CountryListApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java" afterPath="$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java" afterPath="$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/Bonus17/Warrior.java" afterPath="$PROJECT_DIR$/src/BonusWork/Bonus17/Warrior.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BonusWork/Bonus17/Wizard.java" afterPath="$PROJECT_DIR$/src/BonusWork/Bonus17/Wizard.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,24 +36,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameCharacter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameCharacter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="546">
+              <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="e#380#381#0" expanded="true" />
                 <element signature="e#407#408#0" expanded="true" />
                 <element signature="e#447#448#0" expanded="true" />
                 <element signature="e#479#480#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,13 +62,13 @@
       <file leaf-file-name="MagicUsingCharacter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="26" column="149" lean-forward="false" selection-start-line="26" selection-start-column="149" selection-end-line="26" selection-end-column="149" />
+            <state relative-caret-position="231">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+                <element signature="e#509#510#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,12 +78,11 @@
         <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/Warrior.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="26" column="130" lean-forward="false" selection-start-line="26" selection-start-column="130" selection-end-line="26" selection-end-column="130" />
+              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
               <folding>
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,25 +91,25 @@
       <file leaf-file-name="Wizard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/Wizard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="231">
+              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#509#510#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#608#609#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/GameApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state relative-caret-position="113">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -266,11 +263,11 @@
         <option value="$PROJECT_DIR$/src/Labs/Lab15/CountryListApp.java" />
         <option value="$PROJECT_DIR$/src/Labs/InputValidator.java" />
         <option value="$PROJECT_DIR$/src/Labs/Lab8/BattingCalculator.java" />
-        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/Wizard.java" />
-        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java" />
-        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java" />
-        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/Warrior.java" />
         <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/GameApp.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/Warrior.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/Wizard.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java" />
+        <option value="$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java" />
       </list>
     </option>
   </component>
@@ -1024,7 +1021,7 @@
       <workItem from="1499963718615" duration="1376000" />
       <workItem from="1500062035957" duration="2296000" />
       <workItem from="1500296284528" duration="189000" />
-      <workItem from="1500312957230" duration="2040000" />
+      <workItem from="1500312957230" duration="2191000" />
     </task>
     <servers />
   </component>
@@ -1046,7 +1043,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198458000" />
+    <option name="totallyTimeSpent" value="198609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1070,7 +1067,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32491767" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32491767" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1440,73 +1437,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java">
+    <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/GameApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="149" lean-forward="false" selection-start-line="26" selection-start-column="149" selection-end-line="26" selection-end-column="149" />
-          <folding>
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="113">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/Warrior.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="26" column="130" lean-forward="false" selection-start-line="26" selection-start-column="130" selection-end-line="26" selection-end-column="130" />
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
           <folding>
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/Wizard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/GameApp.java">
+    <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/MagicUsingCharacter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="231">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BonusWork/Bonus17/GameCharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="4" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

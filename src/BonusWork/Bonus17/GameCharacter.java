@@ -24,7 +24,7 @@ public abstract class GameCharacter {
         this.name = name;
     }
 
-    public int getStrength() {
+    int getStrength() {
         return strength;
     }
 
@@ -32,7 +32,7 @@ public abstract class GameCharacter {
         this.strength = strength;
     }
 
-    public int getIntelligence() {
+    int getIntelligence() {
         return intelligence;
     }
 

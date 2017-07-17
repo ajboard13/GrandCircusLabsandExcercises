@@ -7,9 +7,9 @@ Aaron Board
  */
 public class MagicUsingCharacter extends GameCharacter {
 
-    int magicalEnergy;
+    private int magicalEnergy;
 
-    public MagicUsingCharacter(String name, int strength, int intelligence, int magicalEnergy) {
+    MagicUsingCharacter(String name, int strength, int intelligence, int magicalEnergy) {
         super(name, strength, intelligence);
         this.magicalEnergy = magicalEnergy;
     }

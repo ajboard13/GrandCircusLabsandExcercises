@@ -6,10 +6,10 @@ Aaron Board
 7/17/2017
  */
 public class Wizard extends MagicUsingCharacter{
-    int spellNumber;
+    private int spellNumber;
 
 
-    public Wizard(String name, int strength, int intelligence, int magicalEnergy, int spellNumber) {
+    Wizard(String name, int strength, int intelligence, int magicalEnergy, int spellNumber) {
             super(name, strength, intelligence, magicalEnergy);
             this.spellNumber = spellNumber;
     }

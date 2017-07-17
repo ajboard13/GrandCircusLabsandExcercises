@@ -7,9 +7,9 @@ Aaron Board
  */
 public class Warrior extends GameCharacter{
 
-    String weaponType;
+    private String weaponType;
 
-    public Warrior(String name, int strength, int intelligence, String weaponType) {
+    Warrior(String name, int strength, int intelligence, String weaponType) {
         super(name, strength, intelligence);
         this.weaponType = weaponType;
     }
