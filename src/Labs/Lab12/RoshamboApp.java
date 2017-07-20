@@ -25,7 +25,10 @@ public class RoshamboApp {
         String userName = getUserName();
         Human player = new Human(userName);
         do {
-            Player opponent = chooseOpponent();
+            System.out.printf("\nWould you like to play against %s or %s (b/a)?", "Brock", "Ash");
+            String choice = inputValidator.checkForValidChoice("b", "a");
+            //Player opponent = chooseOpponent(choice);
+            Player opponent = PlayerFactory.getInstance(choice);
             int userChoice = getUserChoice() - 1;
             player.setChoice(userChoice);
             Roshambo playerResult = player.generateRoshambo();
