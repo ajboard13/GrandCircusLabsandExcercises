@@ -22,7 +22,6 @@ class CountryListApp {
         System.out.println("\n1 for text\n2 for binary");
         dao = DaoFactory.getInstance(inputValidator.getValidIntBetweenTwoNumbers(1,2));
         initializeCountries();
-        dao.writeCountries(startingCountries);
         do {
             checkTheUserSelection(getUserSelection());
         }while (userCont);

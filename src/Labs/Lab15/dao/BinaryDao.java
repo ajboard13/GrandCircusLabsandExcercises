@@ -14,11 +14,11 @@ public class BinaryDao implements CountriesDao {
     @Override
     public void writeCountries(ArrayList<String> countries) {
         try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("countries.txt"));
+            DataOutputStream dataOutputStream = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("countries.dat", true)));
             for (String country: countries){
-                bufferedWriter.write(country+"\n");
+                dataOutputStream.writeUTF(country+"\n");
             }
-            bufferedWriter.close();
+            dataOutputStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
