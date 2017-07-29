@@ -1,6 +1,7 @@
 package CodeChallenges;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by user on 7/28/2017.
@@ -9,24 +10,30 @@ public class FindingMissingIntegerFromArray {
     public static void main(String[] args) {
 
     }
-    public ArrayList<Integer> findMissingInts(int[] nums){
+
+    public ArrayList<Integer> findMissingInts(int[] nums) {
         ArrayList<Integer> missingNums = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (i != 0) {
-                if (nums[i] - 1 != nums[i - 1]) {
-                    missingNums.add(nums[i]-1);
+        int numOfMissingNums = Arrays.stream(nums).max().getAsInt() - nums.length;
+        int i = 0;
+        while (missingNums.size() < numOfMissingNums) {
+            if (getComparingInt(missingNums, i) != nums[i]) {
+                missingNums.add(getComparingInt(missingNums, i));
+                i++;
+            } else {
+                i++;
+            }
+            if (missingNums.size() > 1) {
+                if (missingNums.get(missingNums.size() - 2) == missingNums.get(missingNums.size() - 1) - 2) {
+                    missingNums.set(missingNums.size() - 1, missingNums.get(missingNums.size() - 1) - 1);
+                    i--;
                 }
             }
         }
-
         return missingNums;
     }
-    private static ArrayList<Integer> createComparisonArray(int[] nums){
-        int maxValue = nums[nums.length-1];
-        ArrayList<Integer> compareArray = new ArrayList<>();
-        for (int i = 1; i < maxValue; i++) {
-            compareArray.add(i);
-        }
-        return compareArray;
+
+    private int getComparingInt(ArrayList<Integer> missingNums, int i) {
+        return i + 1 + missingNums.size();
+
     }
 }
